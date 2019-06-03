@@ -38,3 +38,4 @@ namespace ConsoleApplication38
 //Testing another way to commit changes
 //This commit was through VS
 //andrew did this through VS
+//doug did this in VS
