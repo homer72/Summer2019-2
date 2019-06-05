@@ -38,7 +38,7 @@ namespace ConsoleApplication38
 
         }
 
-        public int DrainHealth()
+        public int DrainHealth()                            //steal player health to heal self
         {
 
             Random r = new Random();
@@ -47,11 +47,21 @@ namespace ConsoleApplication38
             return damage;
 
         }
-        public int BasicAttack()
+        public int BasicAttack()                            //basic attack method
         {
             Random r = new Random();
             int damage = strength;
             return damage;
+
+        }
+        public void ObscuringMist()
+        {
+            if (mp > 0)
+            {
+                mp--;
+                defense += 2;
+                //missing code to handle turns for duration
+            }
 
         }
 
