@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-    class Warrior:Blank
+    class Warrior : Blank
     {
         public Warrior()
         {
