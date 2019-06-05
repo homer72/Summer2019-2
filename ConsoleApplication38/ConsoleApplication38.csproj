@@ -46,7 +46,9 @@
     <Compile Include="Blank.cs" />
     <Compile Include="BugBear.cs" />
     <Compile Include="Magician.cs" />
-    <Compile Include="warrior2.cs" />
+    <Compile Include="Goblin.cs" />
+    <Compile Include="Rouge.cs" />
+    <Compile Include="Warrior.cs" />
     <Compile Include="DiamondDog.cs" />
     <Compile Include="Imp.cs" />
     <Compile Include="Item.cs" />

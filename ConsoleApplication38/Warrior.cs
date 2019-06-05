@@ -12,6 +12,7 @@ namespace ConsoleApplication38
     {
         public Warrior()
         {
+            name = "Warrior";
             health = 0;
             strength = 5 + (level * 2);
             defense = 0;
