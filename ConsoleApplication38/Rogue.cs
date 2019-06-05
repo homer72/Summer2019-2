@@ -23,6 +23,7 @@ namespace ConsoleApplication38
         public int VitalStrike()
         {
             //placeholder text
+            return 0;
         }
     }
 }
