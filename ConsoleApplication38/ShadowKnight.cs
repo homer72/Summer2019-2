@@ -37,9 +37,8 @@ namespace ConsoleApplication38
             xp = 5 * level;                                 //setting xp
         }
 
-        public void DrainHealth()
+        public void ShieldWall()
         {
-
             //insert code
 
         }

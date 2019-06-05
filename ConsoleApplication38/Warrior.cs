@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-
-
     class Warrior : Blank
     {
         public string job_name = "Warrior";
