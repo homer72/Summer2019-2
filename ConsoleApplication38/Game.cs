@@ -46,24 +46,27 @@ namespace ConsoleApplication38
             {
                 Console.WriteLine("Item Added:  'Weak Wooden Staff' ");
                 Item ob = new Item();
-                ob.inventory[0] = 
+                ob.inventory[0] = "Weak Wooden Staff";
 
             }
 
-            if (playerClass == "WARRIOR")
+            else if (playerClass == "WARRIOR")
             {
                 Console.WriteLine("Item Added:  'Rusty Metal Sword' ");
                 Item ob = new Item();
-                ob.inventory[0] =
+                ob.inventory[0] = "Rusty Metal Sword";
             }
 
-            if (playerClass == "ROGUE")
+            else if (playerClass == "ROGUE")
             {
                 Console.WriteLine("Item Added:  'Rusty Metal Daggers' ");
                 Item ob = new Item();
-                ob.inventory[0] =
+                ob.inventory[0] = "Rusty Metal Daggers";
             }
 
+            
+            
+            
 
             
 
