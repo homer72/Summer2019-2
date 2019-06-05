@@ -37,5 +37,12 @@ namespace ConsoleApplication38
             xp = 5 * level;                                 //setting xp
         }
 
+        public void DrainHealth()
+        {
+
+            //insert code
+
+        }
+
     }
 }
