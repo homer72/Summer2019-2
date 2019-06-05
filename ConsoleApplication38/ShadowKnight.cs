@@ -39,7 +39,14 @@ namespace ConsoleApplication38
 
         public void ShieldWall()
         {
-            //insert code
+            defense += 1;
+
+        }
+        public int BasicAttack()
+        {
+            Random r = new Random();
+            int damage = strength;
+            return damage;
 
         }
 

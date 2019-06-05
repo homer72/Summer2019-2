@@ -38,14 +38,24 @@ namespace ConsoleApplication38
 
         }
 
-        public void DrainHealth()
+        public int DrainHealth()
         {
 
-            //insert code
+            Random r = new Random();
+            int damage = strength + r.Next(1, 3);
+            health += (damage/2);
+            return damage;
+
+        }
+        public int BasicAttack()
+        {
+            Random r = new Random();
+            int damage = strength;
+            return damage;
 
         }
 
-    
+
 
     }
 }
