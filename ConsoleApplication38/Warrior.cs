@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-
-
-    class Warrior2 : Blank
+    class Warrior : Blank
     {
-        public Warrior2()
+        public Warrior()
         {
+            name = "Warrior";
             health = 0;
             strength = 5 + (level * 2);
             defense = 0;
