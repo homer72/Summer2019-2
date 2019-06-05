@@ -20,6 +20,10 @@ namespace ConsoleApplication38
             level = 0;
         }
 
+        public int GetStrength()
+        {
+            return strength;
+        }
         
         public void VitalStrike()
         {
