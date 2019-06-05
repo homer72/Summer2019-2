@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-    class Magician : Blank
+    class Mage : Blank
     {
-        public Magician()
+        public Mage()
         {
             string job_name = "Magician";
             health = 15 + (Convert.ToInt32(level * 0.85f));
