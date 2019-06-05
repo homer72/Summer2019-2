@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-    class Imp: Blank
+    class Goblin: Blank
     {
         Random r = new Random();
-        public Imp(int level)
+        public Goblin(int level)
         {
-            name = "Imp";
-            strength = r.Next(level - 1, level) + 1;
-            speed = r.Next(level - 1, level) + 3;
+            name = "Goblin";
+            strength = r.Next(level - 1, level) + 2;
+            speed = r.Next(level - 1, level) + 2;
             defense = r.Next(level - 1, level);
-            mp = r.Next(level - 1, level) + 2;
+            mp = r.Next(level - 1, level);
             if (strength <= 0)
             {
                 strength = 1;
@@ -39,7 +39,5 @@ namespace ConsoleApplication38
             health = (r.Next(50, 100) * .1f) + level;
             xp = 2 * level;
         }
-
-
     }
 }
