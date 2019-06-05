@@ -10,22 +10,35 @@ namespace ConsoleApplication38
     {
         static void Main(string[] args)
         {
-
-            Game obj = new Game();
-
-           
-            string userName = obj.Intro();
-            obj.TrainingLevel(userName);
-
             
+            Game obj = new Game();
+            obj.Menu();
+            obj.Intro();
+
+            obj.TrainingLevel();
+
+
             Console.ReadKey();
         }
 
+        void Menu()
+        {
 
+            Console.WriteLine("______                                           ______  _");
+            Console.WriteLine("| _  \\                                          | _  \\(_)");
+            Console.WriteLine("| | | | _   _  _ __    __ _   ___   ___   _ __ | | | | _ __   __ ___  _ __  ___");
+            Console.WriteLine("| | | || | | || '_ \\  / _` | / _ \\ / _ \\ | '_ \\  | | | || |\\ \\ / // _ \\| '__|/ __|");
+            Console.WriteLine("| |/ / | | _ | || | | || (_ | || __ /| (_) || | | | | |/ / | | \\ V /| __ /| |   \\__ \\");
+            Console.WriteLine("| ___ /   \\__, _ || _ | | _ | \\__, | \\___ | \\___ / | _ | | _ | | ___ /  | _ |  \\_ /  \\___ || _ |   | ___ /");
+            Console.WriteLine("           __ / |");
+            Console.WriteLine("          | ___ /");
+
+        }
 
 
         string Intro()
         {
+
             Console.WriteLine("Welcome to Dungeon Divers! A strategic turn based game that explores through a vast dungeon with doors to open and roomsto explore. Be advised monsters exist within the game and it's your job to take care of those monsters by any means");
             Console.WriteLine("necessary to level up and become stronger.Your goal is to collect items, by fighting, level up and");
             
@@ -39,23 +52,20 @@ namespace ConsoleApplication38
         }
 
 
-        void TrainingLevel(string userName) //Introductory Level
+        void TrainingLevel() //Introductory Level
         {
-            
+            Rogue rog = new Rogue();
             Item ob = new Item();
 
             string placeHolderForThePlayer = "NULL"; //PlaceHolder
-           
+            string playerClass = "WARRIOR";  //PlaceHolder
 
 
-            Console.WriteLine("Welcome " + userName + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your Great Adventure.");
+            Console.WriteLine("Welcome " + placeHolderForThePlayer + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your Great Adventure.");
             Console.WriteLine("Firstly, every hero needs a weapon.  I will gift you a weapon now to start your adventure.");
             //using a placeholder for the player class.  Chiron is going to give them a weapon depending on which class they use.
-            Console.WriteLine("But first, tell me your attack style?  Are you a Mage?  A Warrior?  Or are you a Rouge?");
-            string playerClass = Console.ReadLine();
-            
 
-            if ( playerClass.ToUpper() == "MAGE")
+            if ( playerClass == "MAGE")
             {
                 int i = 0;
 
