@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-    class BugBear:Blank
+    class ShadowKnight:Blank
     {
         Random r = new Random();
-        public BugBear(int level)
+        public ShadowKnight(int level)
         {
-            name = "BugBear";
+            name = "ShadowKnight";
             strength = r.Next(level - 1, level) + 3;
             speed = r.Next(level - 1, level) + 1;
-            defense = r.Next(level - 1, level) + 2;
-            mp = r.Next(level - 1, level);
+            defense = r.Next(level - 1, level) + 4;
+            mp = r.Next(level - 1, level) + 2;
             if (strength <= 0)                               //if zero set to 1
             {
                 strength = 1;
@@ -33,10 +33,9 @@ namespace ConsoleApplication38
                 mp = 1;
             }
 
-            health = (r.Next(50, 100)*.1f) + level;         //setting health
-            xp = 3 * level;                                 //setting xp
+            health = (r.Next(50, 100) * .1f) + level;       //setting health
+            xp = 5 * level;                                 //setting xp
         }
-        
+
     }
 }
-

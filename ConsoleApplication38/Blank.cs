@@ -9,12 +9,16 @@ namespace ConsoleApplication38
     public class Blank 
     {
         protected float health;
-        protected int damage;
+        protected int strength;
         protected string name;
         protected Item weapon;
         protected Item[] inventory = new Item[10];
         protected int xp;
         protected int level;
+        protected int defense;
+        protected int speed;
+        protected int mp;
+
 
         public Blank()
         {
@@ -26,10 +30,3 @@ namespace ConsoleApplication38
         }
     }
 }
-//this is a test.
-//Be our guest.
-// second test
-// Third test
-//Better than the rest
-//flagged account
-// Testing this message thing 

@@ -8,8 +8,10 @@ namespace ConsoleApplication38
 {
     public class Item
     {
+        string introStaff = "Weak wooden staff";
 
-        public int[] inventory = new int[10];
+
+        public string[] inventory = new string[10];
 
 
 
