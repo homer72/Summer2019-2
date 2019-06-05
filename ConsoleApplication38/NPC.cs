@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-    class NPC
+    class NPC : Blank
     {
+        
+
+
     }
 }

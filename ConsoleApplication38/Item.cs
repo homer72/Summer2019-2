@@ -8,5 +8,10 @@ namespace ConsoleApplication38
 {
     public class Item
     {
+
+        public int[] inventory = new int[10];
+
+
+
     }
 }
