@@ -14,8 +14,8 @@ namespace ConsoleApplication38
             Game obj = new Game();
 
             obj.Intro();
-           
 
+            obj.TrainingLevel();
 
 
             Console.ReadKey();
@@ -47,30 +47,37 @@ namespace ConsoleApplication38
 
                 Console.WriteLine("Item Added: 'Weak Wooden Staff' ");
                 Item ob = new Item();
-                if (ob.inventory[i] == "")
-                {
-                    ob.inventory[i] = "Weak Wooden Staff";
-                }
-                else if {
-
-                }
-
-
+                ob.inventory[0] = "Weak Wooden Staff";
             }
 
             if (playerClass == "WARRIOR")
             {
                 Console.WriteLine("Item Added:  'Rusty Metal Sword' ");
                 Item ob = new Item();
-                ob.inventory[0] =
+                ob.inventory[0] = "Rusty Metal Sword";
             }
 
             if (playerClass == "ROGUE")
             {
                 Console.WriteLine("Item Added:  'Rusty Metal Daggers' ");
                 Item ob = new Item();
-                ob.inventory[0] =
+                ob.inventory[0] = "Rusty Metal Daggers";
             }
+
+
+
+
+
+
+
+
+
+
+
+            Console.WriteLine("Every adventure starts with a trusty weapon.");
+            Console.WriteLine("To Access your Inventory at any time, type in 'inv' ");
+            Console.WriteLine("Try it now.");
+            Console.ReadLine();
 
 
             
