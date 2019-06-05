@@ -38,6 +38,12 @@ namespace ConsoleApplication38
 
             health = (r.Next(50, 100) * .1f) + level;
             xp = 3 * level;
+
+            public void Fortify()
+            {
+                defense += 2;
+            }
+
         }
     }
 }
