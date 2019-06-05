@@ -13,11 +13,11 @@ namespace ConsoleApplication38
 
             Game obj = new Game();
 
-            obj.Intro();
+           
+            string userName = obj.Intro();
+            obj.TrainingLevel(userName);
 
-            obj.TrainingLevel();
-
-
+            
             Console.ReadKey();
         }
 
@@ -40,20 +40,23 @@ namespace ConsoleApplication38
         }
 
 
-        void TrainingLevel() //Introductory Level
+        void TrainingLevel(string userName) //Introductory Level
         {
-            Rogue rog = new Rogue();
+            
             Item ob = new Item();
 
             string placeHolderForThePlayer = "NULL"; //PlaceHolder
-            string playerClass = "WARRIOR";  //PlaceHolder
+           
 
 
-            Console.WriteLine("Welcome " + placeHolderForThePlayer + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your Great Adventure.");
+            Console.WriteLine("Welcome " + userName + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your Great Adventure.");
             Console.WriteLine("Firstly, every hero needs a weapon.  I will gift you a weapon now to start your adventure.");
             //using a placeholder for the player class.  Chiron is going to give them a weapon depending on which class they use.
+            Console.WriteLine("But first, tell me your attack style?  Are you a Mage?  A Warrior?  Or are you a Rouge?");
+            string playerClass = Console.ReadLine();
+            
 
-            if ( playerClass == "MAGE")
+            if ( playerClass.ToUpper() == "MAGE")
             {
                 int i = 0;
 
