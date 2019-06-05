@@ -36,6 +36,14 @@ namespace ConsoleApplication38
             health = (r.Next(50, 100)*.1f) + level;         //setting health
             xp = 3 * level;                                 //setting xp
         }
+
+        public void MightyBlow()
+        {
+
+            //insert code
+
+        }
+        
         
     }
 }

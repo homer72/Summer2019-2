@@ -58,6 +58,22 @@ namespace ConsoleApplication38
 
             }
 
+            if (playerClass == "WARRIOR")
+            {
+                Console.WriteLine("Item Added:  'Rusty Metal Sword' ");
+                Item ob = new Item();
+                ob.inventory[0] =
+            }
+
+            if (playerClass == "ROGUE")
+            {
+                Console.WriteLine("Item Added:  'Rusty Metal Daggers' ");
+                Item ob = new Item();
+                ob.inventory[0] =
+            }
+
+
+            
 
         }
 
