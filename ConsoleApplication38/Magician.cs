@@ -11,10 +11,10 @@ namespace ConsoleApplication38
         public Magician()
         {
             string job_name = "Magician";
-            health = 15 + (level * 0.85f);
-            strength = 5;
-            defense = 0;
-            speed = 5;
+            health = 15 + (Convert.ToInt32(level * 0.85f));
+            strength = 5 + (level);
+            defense = 5 + (level);
+            speed = 5 + (level);
             mp = 5 + (level * 2);
         }
     }
