@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-
-
-    class Warrior : Blank
+    class Magician : Blank
     {
-        public Warrior()
+        public Magician()
         {
+            string job_name = "Magician";
             health = 0;
-            strength = 5 + (level * 2);
+            strength = 0;
             defense = 0;
             speed = 0;
-            mp = 0;
+            mp = 5 + (level * 2);
         }
     }
 }
-            
-
