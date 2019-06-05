@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Blank.cs" />
     <Compile Include="BugBear.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="warrior2.cs" />
     <Compile Include="DiamondDog.cs" />
     <Compile Include="Imp.cs" />
