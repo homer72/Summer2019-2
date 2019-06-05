@@ -8,9 +8,9 @@ namespace ConsoleApplication38
 {
     class Mage : Blank
     {
+        public string job_name = "Magician";
         public Mage()
         {
-            string job_name = "Magician";
             health = 15 + (Convert.ToInt32(level * 0.85f));
             strength = 5 + (level);
             defense = 5 + (level);

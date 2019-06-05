@@ -8,9 +8,9 @@ namespace ConsoleApplication38
 {
     class Rogue : Blank
     {
+        public string job_name = "Rouge";
         public Rogue()
         {
-            string job_name = "Rouge";
             health = 15 + (level);
             strength = 5 + (level);
             defense = 5 + (Convert.ToInt32(level * 0.85f));
