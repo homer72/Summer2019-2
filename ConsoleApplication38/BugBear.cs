@@ -37,9 +37,11 @@ namespace ConsoleApplication38
             xp = 3 * level;                                 //setting xp
         }
 
-        public void MightyBlow()
+        public int MightyBlow()
         {
-            //insert code
+            Random r = new Random();
+            int damage = strength + r.Next(1, 5);
+            return damage;
 
         }
         
