@@ -40,6 +40,28 @@ namespace ConsoleApplication38
             xp = 2 * level;
         }
 
+        public int WillOWisp()
+        {
+            Random r = new Random();
+            int damage = strength + r.Next(0, 2);
+            return damage;
+        }
+
+        public void Confound()
+        {
+            if (mp > 0)
+            {
+                mp--;
+                //code for inflicting Confusion
+            }
+
+        }
+
+        public void Rejuevenate()
+        {
+            mp++;
+        }
+
 
     }
 }

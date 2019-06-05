@@ -28,5 +28,11 @@ namespace ConsoleApplication38
 
 
         }
+        public Item DropEquipment()
+        {
+            Item temp = weapon;
+            return temp;
+
+        }
     }
 }

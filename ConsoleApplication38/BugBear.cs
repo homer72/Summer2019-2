@@ -37,13 +37,33 @@ namespace ConsoleApplication38
             xp = 3 * level;                                 //setting xp
         }
 
-        public void MightyBlow()
+        public int MightyBlow()                             //a more powerful attack method
         {
-            //insert code
+            Random r = new Random();
+            int damage = strength + r.Next(1, 5);
+            return damage;
 
         }
-        
-        
+        public int BasicAttack()                            //basic attack method
+        {
+            Random r = new Random();
+            int damage = strength;
+            return damage;
+
+        }
+        public void Enrage()
+        {
+            if (mp > 0)
+            {
+                mp--;
+                strength += 2;
+                defense -= 1;
+                //missing code to handle turns for duration
+            }
+
+        }
+
+
     }
 }
 

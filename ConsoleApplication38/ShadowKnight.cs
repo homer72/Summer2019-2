@@ -37,9 +37,26 @@ namespace ConsoleApplication38
             xp = 5 * level;                                 //setting xp
         }
 
-        public void ShieldWall()
+        public void ShieldWall()                            //a defensive method
         {
-            //insert code
+            defense += 1;
+
+        }
+        public int BasicAttack()                            //basic attack method
+        {
+            Random r = new Random();
+            int damage = strength;
+            return damage;
+
+        }
+        public void Shadowstep()
+        {
+            if (mp > 0)
+            {
+                mp--;
+                speed += 2;
+                //missing code to handle turns for duration
+            }
 
         }
 
