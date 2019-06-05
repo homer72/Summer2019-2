@@ -11,10 +11,10 @@ namespace ConsoleApplication38
         public Magician()
         {
             string job_name = "Magician";
-            health = 0;
-            strength = 0;
+            health = 15 + (level * 0.85f);
+            strength = 5;
             defense = 0;
-            speed = 0;
+            speed = 5;
             mp = 5 + (level * 2);
         }
     }
