@@ -16,8 +16,20 @@ namespace ConsoleApplication38
             defense = 5 + (level);
             speed = 5 + (level);
             mp = 5 + (Convert.ToInt32(level * 0.85f));
+            xp = 0;
+            level = 0;
+
         }
+        
+      
+            
+
+
+
+
+
+         }
     }
-}
+
             
 
