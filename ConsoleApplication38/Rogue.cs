@@ -16,6 +16,13 @@ namespace ConsoleApplication38
             defense = 5 + (Convert.ToInt32(level * 0.85f));
             speed = 5 + (level * 2);
             mp = 5 + (level);
+            xp = 0;
+            level = 0;
+        }
+
+        public int VitalStrike()
+        {
+            //placeholder text
         }
     }
 }
