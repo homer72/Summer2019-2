@@ -8,10 +8,10 @@ namespace ConsoleApplication38
 {
     public class Item
     {
-           
 
-        public string[] inventory = new string[10];
 
+        public string[] inventory = new string[] {"Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" };
+        
 
 
     }

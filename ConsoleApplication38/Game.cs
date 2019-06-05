@@ -24,17 +24,29 @@ namespace ConsoleApplication38
 
 
 
-        void Intro()
+        string Intro()
         {
             Console.WriteLine("Welcome to Dungeon Divers! A strategic turn based game that explores through a vast dungeon with doors to open and rooms to explore. Be advised monsters exist within the game and it's your job to take care of those monsters by any means necessary to level up and become stronger. Your goal is to collect items, by fighting, level up and /*get out the dungeon/*"); // /*More stuff to be added/*
 
+
+
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("Enter your username: ");
+            string userName = Console.ReadLine();
+            return userName;
         }
 
 
         void TrainingLevel() //Introductory Level
         {
+            Rogue rog = new Rogue();
+            Item ob = new Item();
+
             string placeHolderForThePlayer = "NULL"; //PlaceHolder
-            string playerClass = "PlaceHolder";  //PlaceHolder
+            string playerClass = "WARRIOR";  //PlaceHolder
 
 
             Console.WriteLine("Welcome " + placeHolderForThePlayer + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your Great Adventure.");
@@ -46,21 +58,18 @@ namespace ConsoleApplication38
                 int i = 0;
 
                 Console.WriteLine("Item Added: 'Weak Wooden Staff' ");
-                Item ob = new Item();
                 ob.inventory[0] = "Weak Wooden Staff";
             }
 
             if (playerClass == "WARRIOR")
             {
                 Console.WriteLine("Item Added:  'Rusty Metal Sword' ");
-                Item ob = new Item();
                 ob.inventory[0] = "Rusty Metal Sword";
             }
 
             if (playerClass == "ROGUE")
             {
                 Console.WriteLine("Item Added:  'Rusty Metal Daggers' ");
-                Item ob = new Item();
                 ob.inventory[0] = "Rusty Metal Daggers";
             }
 
@@ -77,7 +86,14 @@ namespace ConsoleApplication38
             Console.WriteLine("Every adventure starts with a trusty weapon.");
             Console.WriteLine("To Access your Inventory at any time, type in 'inv' ");
             Console.WriteLine("Try it now.");
-            Console.ReadLine();
+            string userAns = Console.ReadLine();
+            if(userAns == "inv")
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine(ob.inventory[i]);
+                }
+            }
 
 
             
