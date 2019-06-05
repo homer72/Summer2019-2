@@ -12,10 +12,10 @@ namespace ConsoleApplication38
         public BugBear(int level)
         {
             name = "BugBear";
-            damage = r.Next(level - 1, level);
-            if (damage <= 0)
+            strength = r.Next(level - 1, level);
+            if (strength <= 0)
             {
-                damage = 1;
+                strength = 1;
             }
           
             health = (r.Next(50, 100)*.1f) + level;
@@ -25,17 +25,4 @@ namespace ConsoleApplication38
         
     }
 }
-//Did it work?  - M Engelbrecht
 
-//M Engelbrecht Testing                  
-
-//Please accept me into the project.  I NEED THIS
-//just shutup and take my money.
-//doh
-// bugbear
-// I'm here
-// new line
-//Testing another way to commit changes
-//This commit was through VS
-//andrew did this through VS
-//doug did this in VS
