@@ -36,7 +36,7 @@ namespace ConsoleApplication38
             health = (r.Next(50, 100) * .1f) + level;       //setting health
             xp = 4 * level;                                 //setting xp
 
-
+        }
 
         public void DrainHealth()
         {

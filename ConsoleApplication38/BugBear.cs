@@ -39,7 +39,6 @@ namespace ConsoleApplication38
 
         public void MightyBlow()
         {
-
             //insert code
 
         }
