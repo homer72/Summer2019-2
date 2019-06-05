@@ -47,8 +47,15 @@ namespace ConsoleApplication38
             return damage;
 
         }
+        public int BasicAttack()
+        {
+            Random r = new Random();
+            int damage = strength;
+            return damage;
 
-    
+        }
+
+
 
     }
 }
