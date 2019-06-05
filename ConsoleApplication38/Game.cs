@@ -10,14 +10,8 @@ namespace ConsoleApplication38
     {
         static void Main(string[] args)
         {
-
-            Game obj = new Game();
-
-            obj.Intro();
-           
-
-
-
+            //INTRO
+            Console.WriteLine("Welcome to Dungeon Divers! A strategic turn based game that explores through a vast dungeon with doors to open and rooms to explore. Be advised monsters exist within the game and it's your job to take care of those monsters by any means necessary to level up and become stronger. Your goal is to collect items, by fighting, level up and /*get out the dungeon/*");
             Console.ReadKey();
         }
 
@@ -26,7 +20,7 @@ namespace ConsoleApplication38
 
         void Intro()
         {
-            Console.WriteLine("Welcome to Dungeon Divers! A strategic turn based game that explores through a vast dungeon with doors to open and rooms to explore. Be advised monsters exist within the game and it's your job to take care of those monsters by any means necessary to level up and become stronger. Your goal is to collect items, by fighting, level up and /*get out the dungeon/*"); // /*More stuff to be added/*
+            Console.WriteLine("Welcome to Dungeon Divers!");
 
         }
 
@@ -43,45 +37,20 @@ namespace ConsoleApplication38
 
             if ( playerClass == "MAGE")
             {
-                int i = 0;
-
-                Console.WriteLine("Item Added: 'Weak Wooden Staff' ");
+                Console.WriteLine("Item Added:  'Weak Wooden Staff' ");
                 Item ob = new Item();
-                if (ob.inventory[i] == "")
-                {
-                    ob.inventory[i] = "Weak Wooden Staff";
-                }
-                else if {
-
-                }
-
+                ob.inventory[0] = 
 
             }
-
-            if (playerClass == "WARRIOR")
-            {
-                Console.WriteLine("Item Added:  'Rusty Metal Sword' ");
-                Item ob = new Item();
-                ob.inventory[0] =
-            }
-
-            if (playerClass == "ROGUE")
-            {
-                Console.WriteLine("Item Added:  'Rusty Metal Daggers' ");
-                Item ob = new Item();
-                ob.inventory[0] =
-            }
-
-
-            
-
-        }
-
-
-
-
 
 
     }
+
+
+
+
+
+
+}
 }
 
