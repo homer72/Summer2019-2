@@ -8,14 +8,21 @@ namespace ConsoleApplication38
 {
     class Rogue : Blank
     {
+        public string job_name = "Rouge";
         public Rogue()
         {
-            string job_name = "Rouge";
-            health = 15;
-            strength = 5;
-            defense = 0;
+            health = 15 + (level);
+            strength = 5 + (level);
+            defense = 5 + (Convert.ToInt32(level * 0.85f));
             speed = 5 + (level * 2);
-            mp = 0;
+            mp = 5 + (level);
+            xp = 0;
+            level = 0;
+        }
+
+        public int VitalStrike()
+        {
+            //placeholder text
         }
     }
 }

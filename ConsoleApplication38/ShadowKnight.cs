@@ -39,7 +39,7 @@ namespace ConsoleApplication38
 
         public void ShieldWall()
         {
-            //insert code
+            defense += 1;
 
         }
 

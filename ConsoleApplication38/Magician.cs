@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-    class Magician : Blank
+    class Mage : Blank
     {
-        public Magician()
+        public string job_name = "Magician";
+        public Mage()
         {
-            string job_name = "Magician";
-            health = 15 + (level * 0.85f);
-            strength = 5;
-            defense = 0;
-            speed = 5;
+            health = 15 + (Convert.ToInt32(level * 0.85f));
+            strength = 5 ;
+            defense = 5 + (Convert.ToInt32(level*0.8f));
+            speed = 5 + (level);
             mp = 5 + (level * 2);
         }
     }
