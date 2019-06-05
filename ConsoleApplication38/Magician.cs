@@ -13,7 +13,7 @@ namespace ConsoleApplication38
         {
             health = 15 + (Convert.ToInt32(level * 0.85f));
             strength = 5 ;
-            defense = 5 + (Convert.ToInt32(level*0.8f);
+            defense = 5 + (Convert.ToInt32(level*0.8f));
             speed = 5 + (level);
             mp = 5 + (level * 2);
         }
