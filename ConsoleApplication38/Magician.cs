@@ -19,5 +19,24 @@ namespace ConsoleApplication38
             xp = 0;
             level = 0;
         }
+
+        public void Fireball()
+        {
+            mp -= 2;
+            Random r = new Random();
+            int damage = r.Next(Convert.ToInt32((strength * 0.9)), Convert.ToInt32((strength * 1.1)));
+            //Missing code that adds chance of burn status
+        }
+
+        public int Recover()
+        {
+            mp -= 1;
+            return Convert.ToInt32(health * 1.33f);
+        }
+
+        public int Charge()
+        {
+            return mp += 3;
+        }
     }
 }
