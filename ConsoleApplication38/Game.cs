@@ -61,7 +61,7 @@ namespace ConsoleApplication38
             string playerClass = "WARRIOR";  //PlaceHolder
 
 
-            Console.WriteLine("Welcome " + placeHolderForThePlayer + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your Great Adventure.");
+            Console.WriteLine("Welcome " + placeHolderForThePlayer + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your great adventure.");
             Console.WriteLine("Firstly, every hero needs a weapon.  I will gift you a weapon now to start your adventure.");
             //using a placeholder for the player class.  Chiron is going to give them a weapon depending on which class they use.
 
