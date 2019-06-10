@@ -9,11 +9,12 @@ namespace ConsoleApplication38
     class Warrior : Blank
     {
         public string job_name = "Warrior";
+        Random r = new Random();
         public Warrior()
         {
             health = 15 + (Convert.ToInt32(level * 1.15f));
-            strength = 5 + (level * 2);
-            defense = 5 + (level);
+            strength = 10 + (level * 2);
+            defense = 5 + (Convert.ToInt32(level * 1.5f)); ;
             speed = 5 + (level);
             mp = 5 + (Convert.ToInt32(level * 0.85f));
             xp = 0;
@@ -22,13 +23,17 @@ namespace ConsoleApplication38
         }
        
         
-        public void attack()
+        public int attack()
         {
-            //regular attack
+            Random r = new Random();
+            int attack = strength;
+            return attack;//regular attack
         }
-        public void Rage()
+        public int Rage()
         {
-            //Rage(multiplies strength by 2 but decreases defence by 50%)
+            Random r = new Random();
+            int rage = strength*2+defense/2;
+            return rage; //Rage(multiplies strength by 2 but decreases defence by 50%)
         }
 
         public void Battlecry()
