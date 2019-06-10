@@ -119,23 +119,28 @@ namespace ConsoleApplication38
         {
             bool battle_over = false;
 
-            //checking to see who's speed is higher
-            if (player_spd > enemy_spd)
+            while (battle_over != true)
             {
-                //code for player to attack first
+                //checking to see who's speed is higher
+                if (player_spd > enemy_spd)
+                {
+                    //code for player to attack first
 
 
-            }else if(player_spd == enemy_spd)
-            {
+                }
+                else if (player_spd == enemy_spd)
+                {
 
-                //code for speed being a tie
+                    //code for speed being a tie
 
-            }else
-            {
+                }
+                else
+                {
 
-                //code for enemy to go first
+                    //code for enemy to go first
 
 
+                }
             }
 
 
