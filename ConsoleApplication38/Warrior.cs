@@ -20,23 +20,37 @@ namespace ConsoleApplication38
             level = 0;
 
         }
+       
         
-         // Attack (Regular strength stat )
-         //Rage(multiplies strength by 2 but decreases defence by 50%)
-         // Battlecry( Increases stats by 30% for 2 turns)
-         // Defend( Increases defence stat by 30%)
-         //
+        public void attack()
+        {
+            //regular attack
+        }
+        public void Rage()
+        {
+            //Rage(multiplies strength by 2 but decreases defence by 50%)
+        }
+
+        public void Battlecry()
+        {
+            // Battlecry( Increases stats by 30% for 2 turns)
+        }
+       public void Defend()
+        {
+            // Defend( Increases defence stat by 30%)
+        }
         
-         // Weapons: 
-        
-      
-            
+        // Weapons: 
+        // Heavy Armor:
+        // items:
 
 
 
 
 
-         }
+
+
+    }
     }
 
             
