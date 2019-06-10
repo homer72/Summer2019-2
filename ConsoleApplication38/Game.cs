@@ -32,7 +32,7 @@ namespace ConsoleApplication38
             Console.WriteLine("██████╔╝╚██████╔╝██║ ╚████║╚██████╔╝███████╗╚██████╔╝██║ ╚████║    ██████╔╝██║ ╚████╔╝ ███████╗██║  ██║███████║");
             Console.WriteLine("╚═════╝  ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝");
         }
-
+        
 
         string Intro()
         {
@@ -41,7 +41,7 @@ namespace ConsoleApplication38
             Console.WriteLine();
             Console.WriteLine("Welcome Dungeon Diver! Behold a strategic turn based game that explores through a vast dungeon with doors to open and ");
             Console.WriteLine("rooms to explore. You are a Dungeon Diver, a unique adventurer whose purpose is to collect items, fight, level up and");
-            Console.WriteLine("Be advised monsters exist within this realm and it's your job to take care of those monsters by any means necessary");
+            Console.WriteLine("do be advised monsters exist within this realm and it's your job to take care of those monsters by any means necessary");
             Console.WriteLine("to level up and become stronger.");
 
 
@@ -138,7 +138,37 @@ namespace ConsoleApplication38
 
 
 
+        public void Master(int player_spd, int enemy_spd)
+        {
+            bool battle_over = false;
 
+            while (battle_over != true)
+            {
+                //checking to see who's speed is higher
+                if (player_spd > enemy_spd)
+                {
+                    //code for player to attack first
+
+
+                }
+                else if (player_spd == enemy_spd)
+                {
+
+                    //code for speed being a tie
+
+                }
+                else
+                {
+
+                    //code for enemy to go first
+
+
+                }
+            }
+
+
+
+        }
 
 
     }
