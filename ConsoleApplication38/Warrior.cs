@@ -26,7 +26,7 @@ namespace ConsoleApplication38
         public int attack()
         {
             
-            int attack = (r.Next((r.Next(Convert.ToInt32(strength *.95f),(Convert.ToInt32(strength * 1.2f))));
+            int attack = (r.Next((r.Next(Convert.ToInt32(strength *.95f),(Convert.ToInt32(strength * 1.2f))))));
             return attack;//regular attack
         }
         public int Rage()

@@ -70,6 +70,7 @@ namespace ConsoleApplication38
 
             if ( playerClass.ToUpper() == "MAGE")
             {
+                Mage RogueOB = new Mage();
                 Console.WriteLine("Ah, a magican?  I've trained a few of those in my day.");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
 
@@ -101,6 +102,7 @@ namespace ConsoleApplication38
 
             if (playerClass.ToUpper() == "WARRIOR")
             {
+                Warrior RogueOB = new Warrior();
                 Console.WriteLine("A Warrior, eh?  You may know a guy I trained back in the day, I think his name was Hercules");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
 
@@ -131,6 +133,7 @@ namespace ConsoleApplication38
 
             if (playerClass.ToUpper() == "ROGUE")
             {
+                Rogue RogueOB = new Rogue();
                 Console.WriteLine("Ah, I haven't trained as many Rogues, but I'm sure I can still teach you a thing or two");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
 
