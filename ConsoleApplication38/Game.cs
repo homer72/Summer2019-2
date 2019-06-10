@@ -39,8 +39,9 @@ namespace ConsoleApplication38
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Welcome Dungeon Diver! Behold a strategic turn based game that explores through a vast dungeon with doors to open and ");
-            Console.WriteLine("rooms to explore. Be advised monsters exist within this realm and it's your job to take care of those monsters by any ");
-            Console.WriteLine("means necessary to level up and become stronger.Your goal is to collect items, fight, level up and");
+            Console.WriteLine("rooms to explore. You are a Dungeon Diver, a unique adventurer whose purpose is to collect items, fight, level up and");
+            Console.WriteLine("Be advised monsters exist within this realm and it's your job to take care of those monsters by any means necessary");
+            Console.WriteLine("to level up and become stronger.");
 
 
 
