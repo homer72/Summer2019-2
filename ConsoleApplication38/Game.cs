@@ -23,7 +23,8 @@ namespace ConsoleApplication38
 
         void Menu()
         {
-            Console.WriteLine();
+            Console.WriteLine("                                                Press 'Enter' To Play                                          ");
+            Console.ReadLine();
             Console.WriteLine("██████╗ ██╗   ██╗███╗   ██╗ ██████╗ ███████╗ ██████╗ ███╗   ██╗    ██████╗ ██╗██╗   ██╗███████╗██████╗ ███████╗");
             Console.WriteLine("██╔══██╗██║   ██║████╗  ██║██╔════╝ ██╔════╝██╔═══██╗████╗  ██║    ██╔══██╗██║██║   ██║██╔════╝██╔══██╗██╔════╝");
             Console.WriteLine("██║  ██║██║   ██║██╔██╗ ██║██║  ███╗█████╗  ██║   ██║██╔██╗ ██║    ██║  ██║██║██║   ██║█████╗  ██████╔╝███████╗");
@@ -39,8 +40,9 @@ namespace ConsoleApplication38
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Welcome Dungeon Diver! Behold a strategic turn based game that explores through a vast dungeon with doors to open and ");
-            Console.WriteLine("rooms to explore. Be advised monsters exist within this realm and it's your job to take care of those monsters by any ");
-            Console.WriteLine("means necessary to level up and become stronger.Your goal is to collect items, fight, level up and");
+            Console.WriteLine("rooms to explore. You are a Dungeon Diver, a unique adventurer whose purpose is to collect items, fight, level up and");
+            Console.WriteLine("Be advised monsters exist within this realm and it's your job to take care of those monsters by any means necessary");
+            Console.WriteLine("to level up and become stronger.");
 
 
 
@@ -60,7 +62,7 @@ namespace ConsoleApplication38
             string playerClass = "WARRIOR";  //PlaceHolder
 
 
-            Console.WriteLine("Welcome " + placeHolderForThePlayer + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your Great Adventure.");
+            Console.WriteLine("Welcome " + placeHolderForThePlayer + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your great adventure.");
             Console.WriteLine("Firstly, every hero needs a weapon.  I will gift you a weapon now to start your adventure.");
             //using a placeholder for the player class.  Chiron is going to give them a weapon depending on which class they use.
 
