@@ -25,6 +25,36 @@ namespace ConsoleApplication38
             Console.WriteLine("Health: {0}\nStrength: {1}\nDefense: {2}\nSpeed: {3}\nMP: {4}\n", health, strength, defense, speed, mp);
         }
         
+        public void RougeSkills()
+        {
+            Console.WriteLine("1. Vital Strike\n2. Backstab\n3. Sprint\n4. Snipe\n5. Tipped Dagger\n6.Stealth");
+        }
+
+        public void SkillInfo(int skill)
+        {
+            switch (skill)
+            {
+                case 1:
+                    Console.WriteLine("Default rouge attack. Deals moderate damage.");
+                    break;
+                case 2:
+                    Console.WriteLine("Deals low to moderate damage. Deals additional damage based on 20% of user's speed stat.");
+                    break;
+                case 3:
+                    Console.WriteLine("Increases speed stat by 30% for the next 3 or 4 turns.");
+                    break;
+                case 4:
+                    Console.WriteLine("Long ranged bow attack that varies from low to high damage.");
+                    break;
+                case 5:
+                    Console.WriteLine("Player throws a poison-tipped dagger that deals low damage, poisons 100%, and dazes 10%.");
+                    break;
+                case 6:
+                    Console.WriteLine("Defense is increased by 40% of current MP for 4 to 5 turns");
+                    break;
+            }
+        } 
+
         public int VitalStrike()
         {
             //Default rouge attack
@@ -37,7 +67,7 @@ namespace ConsoleApplication38
         {
             //Uses strength for damage. 20% of speed is added to total damage dealt. Deals extra damage if target is dazed
             Random r = new Random();
-            int damage = r.Next(Convert.ToInt32((strength * 0.9)), Convert.ToInt32((strength * 1.1))) + Convert.ToInt32((speed *.2));
+            int damage = r.Next(Convert.ToInt32((strength * 0.7)), Convert.ToInt32((strength * 1))) + Convert.ToInt32((speed *.2));
             return damage;
         }
 
@@ -58,7 +88,7 @@ namespace ConsoleApplication38
 
         public int TippedDagger()
         {
-            //player throws a poison-tipped dagger that deals low damage, poisons 100%, and dazes 10%.
+            //Player throws a poison-tipped dagger that deals low damage, poisons 100%, and dazes 10%.
             Random r = new Random();
             int damage = r.Next(Convert.ToInt32((strength * 0.55)), Convert.ToInt32((strength * .8)));
             return damage;
