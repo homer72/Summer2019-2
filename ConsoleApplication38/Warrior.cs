@@ -25,7 +25,7 @@ namespace ConsoleApplication38
         
         public int attack()
         {
-            Random r = new Random();
+            
             int attack = strength;
             return attack;//regular attack
         }
