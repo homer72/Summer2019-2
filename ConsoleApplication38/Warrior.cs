@@ -48,6 +48,7 @@ namespace ConsoleApplication38
             return def;
                 // Defend( Increases defence stat by 30%)
         }
+
         
         // Weapons: 
         // Heavy Armor:
