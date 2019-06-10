@@ -26,7 +26,7 @@ namespace ConsoleApplication38
         public int attack()
         {
             
-            int attack = (r.Next(Convert.ToInt32(strength * .95f),(Convert.ToInt32(strength * 1.2f))));
+            int attack = (r.Next((r.Next(Convert.ToInt32(strength *.95f),(Convert.ToInt32(strength * 1.2f))));
             return attack;//regular attack
         }
         public int Rage()
@@ -36,15 +36,26 @@ namespace ConsoleApplication38
             return rage; //Rage(multiplies strength by 2 but decreases defence by 50%)
         }
 
-        public void Battlecry()
+        public int Battlecry()
         {
+            int buff = Convert.ToInt32((health + strength + defense + speed + mp) * .30f);
+            return buff;
             // Battlecry( Increases stats by 30% for 2 turns)
         }
-       public void Defend()
+       public int Defend()
         {
-            // Defend( Increases defence stat by 30%)
+            int def = Convert.ToInt32(defense * .30f);
+            return def;
+                // Defend( Increases defence stat by 30%)
         }
-        
+
+        public void getmoves(int skills)
+        {
+            attack();
+            Defend();
+            Rage();
+            Battlecry();
+        }
         // Weapons: 
         // Heavy Armor:
         // items:
