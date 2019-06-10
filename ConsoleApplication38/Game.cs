@@ -23,16 +23,20 @@ namespace ConsoleApplication38
 
         void Menu()
         {
-            Console.WriteLine("___  _  _ _  _ ____ ____ ____ _  _    ___  _ _  _ ____ ____ ____ ");
-            Console.WriteLine("|  \\ |  | |\\ | | __ |___ |  | |\\ |    |  \\ | |  | |___ |__/ [__  ");
-            Console.WriteLine("|__/ |__| | \\| |__] |___ |__| | \\|    |__/ |  \\/  |___ |  \\ ___] ");
-
+            Console.WriteLine("██████╗ ██╗   ██╗███╗   ██╗ ██████╗ ███████╗ ██████╗ ███╗   ██╗    ██████╗ ██╗██╗   ██╗███████╗██████╗ ███████╗");
+            Console.WriteLine("██╔══██╗██║   ██║████╗  ██║██╔════╝ ██╔════╝██╔═══██╗████╗  ██║    ██╔══██╗██║██║   ██║██╔════╝██╔══██╗██╔════╝");
+            Console.WriteLine("██║  ██║██║   ██║██╔██╗ ██║██║  ███╗█████╗  ██║   ██║██╔██╗ ██║    ██║  ██║██║██║   ██║█████╗  ██████╔╝███████╗");
+            Console.WriteLine("██║  ██║██║   ██║██║╚██╗██║██║   ██║██╔══╝  ██║   ██║██║╚██╗██║    ██║  ██║██║╚██╗ ██╔╝██╔══╝  ██╔══██╗╚════██║");
+            Console.WriteLine("██████╔╝╚██████╔╝██║ ╚████║╚██████╔╝███████╗╚██████╔╝██║ ╚████║    ██████╔╝██║ ╚████╔╝ ███████╗██║  ██║███████║");
+            Console.WriteLine("╚═════╝  ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝");
         }
 
 
         string Intro()
         {
 
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine("Welcome to Dungeon Divers! A strategic turn based game that explores through a vast dungeon with doors to open and roomsto explore. Be advised monsters exist within the game and it's your job to take care of those monsters by any means");
             Console.WriteLine("necessary to level up and become stronger.Your goal is to collect items, by fighting, level up and");
             
