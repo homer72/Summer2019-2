@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Media;
 namespace ConsoleApplication38
 {
     class Game
@@ -11,6 +11,11 @@ namespace ConsoleApplication38
         static void Main(string[] args)
         {
             
+
+            SoundPlayer player = new SoundPlayer();
+            player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "\\music.wav";
+            player.Play();
+
             Game obj = new Game();
             obj.Menu();
 
