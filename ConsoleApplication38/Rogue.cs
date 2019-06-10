@@ -20,9 +20,9 @@ namespace ConsoleApplication38
             level = 0;
         }
 
-        public int GetStrength()
+        public void ViewStats()
         {
-            return strength;
+            Console.WriteLine("Health: {0}\nStrength: {1}\nDefense: {2}\nSpeed: {3}\nMP: {4}\n", health, strength, defense, speed, mp);
         }
         
         public void VitalStrike()
