@@ -23,15 +23,9 @@ namespace ConsoleApplication38
 
         void Menu()
         {
-
-            Console.WriteLine("______                                           ______  _");
-            Console.WriteLine("| _  \\                                          | _  \\(_)");
-            Console.WriteLine("| | | | _   _  _ __    __ _   ___   ___   _ __ | | | | _ __   __ ___  _ __  ___");
-            Console.WriteLine("| | | || | | || '_ \\  / _` | / _ \\ / _ \\ | '_ \\  | | | || |\\ \\ / // _ \\| '__|/ __|");
-            Console.WriteLine("| |/ / | | _ | || | | || (_ | || __ /| (_) || | | | | |/ / | | \\ V /| __ /| |   \\__ \\");
-            Console.WriteLine("| ___ /   \\__, _ || _ | | _ | \\__, | \\___ | \\___ / | _ | | _ | | ___ /  | _ |  \\_ /  \\___ || _ |   | ___ /");
-            Console.WriteLine("           __ / |");
-            Console.WriteLine("          | ___ /");
+            Console.WriteLine("___  _  _ _  _ ____ ____ ____ _  _    ___  _ _  _ ____ ____ ____ ");
+            Console.WriteLine("|  \\ |  | |\\ | | __ |___ |  | |\\ |    |  \\ | |  | |___ |__/ [__  ");
+            Console.WriteLine("|__/ |__| | \\| |__] |___ |__| | \\|    |__/ |  \\/  |___ |  \\ ___] ");
 
         }
 
