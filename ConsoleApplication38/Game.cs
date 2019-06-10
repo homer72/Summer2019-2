@@ -38,14 +38,14 @@ namespace ConsoleApplication38
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("Welcome to Dungeon Divers! A strategic turn based game that explores through a vast dungeon with doors to open and roomsto explore. Be advised monsters exist within the game and it's your job to take care of those monsters by any means");
-            Console.WriteLine("necessary to level up and become stronger.Your goal is to collect items, by fighting, level up and");
-            
+            Console.WriteLine("Welcome Dungeon Diver! Behold a strategic turn based game that explores through a vast dungeon with doors to open and ");
+            Console.WriteLine("rooms to explore. Be advised monsters exist within this realm and it's your job to take care of those monsters by any ");
+            Console.WriteLine("means necessary to level up and become stronger.Your goal is to collect items, fight, level up and");
 
 
 
-
-            Console.WriteLine("Enter your username: ");
+            Console.WriteLine();
+            Console.WriteLine("What is your name adventurer? ");
             string userName = Console.ReadLine();
             return userName;
         }
