@@ -31,9 +31,8 @@ namespace ConsoleApplication38
         }
         public int Rage()
         {
-            int rage = strength*2;
-            int debuff = defense / 2;
-            return debuff;
+            int rage = strength*2+defense/2;
+          
             return rage; //Rage(multiplies strength by 2 but decreases defence by 50%)
         }
 
