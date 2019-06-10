@@ -22,7 +22,7 @@ namespace ConsoleApplication38
         }
 
 
-
+         
 
         string Intro()
         {
@@ -44,44 +44,42 @@ namespace ConsoleApplication38
             
             Item ob = new Item();
 
-            string placeHolderForThePlayer = "NULL"; //PlaceHolder
-           
-
 
             Console.WriteLine("Welcome " + userName + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your Great Adventure.");
             Console.WriteLine("Firstly, every hero needs a weapon.  I will gift you a weapon now to start your adventure.");
             //using a placeholder for the player class.  Chiron is going to give them a weapon depending on which class they use.
-            Console.WriteLine("But first, tell me your attack style?  Are you a Mage?  A Warrior?  Or are you a Rouge?");
+            Console.WriteLine("But first, tell me your attack style?  Are you a Mage?  A Warrior?  Or are you a Rogue?");
             string playerClass = Console.ReadLine();
             
 
             if ( playerClass.ToUpper() == "MAGE")
             {
-                int i = 0;
+                Console.WriteLine("Ah, so you're a mage?  I've trained a few mages in my lifetime.");
+                Console.WriteLine("I have a few weapons that might interest you.  Pick one of the three.");
+                Console.WriteLine("1: 'Wand.' 2: 'Staff.' 3: 'Tome.' ");
+                int ans = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Item Added: 'Weak Wooden Staff' ");
-                ob.inventory[0] = "Weak Wooden Staff";
+                if (ans == 1)
+                {
+                    string item1 = "Wand";
+                    Console.WriteLine("Item Added: " + item1);
+                    ob.inventory[0] = item1;
+                }
+
+                
             }
 
-            if (playerClass == "WARRIOR")
+            if (playerClass.ToUpper() == "WARRIOR")
             {
                 Console.WriteLine("Item Added:  'Rusty Metal Sword' ");
                 ob.inventory[0] = "Rusty Metal Sword";
             }
 
-            if (playerClass == "ROGUE")
+            if (playerClass.ToUpper() == "ROGUE")
             {
                 Console.WriteLine("Item Added:  'Rusty Metal Daggers' ");
                 ob.inventory[0] = "Rusty Metal Daggers";
             }
-
-
-
-
-
-
-
-
 
 
 

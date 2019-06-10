@@ -43,6 +43,7 @@ namespace ConsoleApplication38
         public int Snipe()
         {
             //Long ranged bow attack that deals extra damage to Imps.
+            return 0;
         }
 
         public void TippedDagger()
