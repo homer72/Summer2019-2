@@ -49,7 +49,13 @@ namespace ConsoleApplication38
                 // Defend( Increases defence stat by 30%)
         }
 
-        
+        public void getmoves(int skills)
+        {
+            attack();
+            Defend();
+            Rage();
+            Battlecry();
+        }
         // Weapons: 
         // Heavy Armor:
         // items:
