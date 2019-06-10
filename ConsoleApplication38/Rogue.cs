@@ -32,7 +32,7 @@ namespace ConsoleApplication38
 
         public void Backstab()
         {
-            //Uses strength for damage. 15% of speed is added to total damage dealt. Deals extra damage if target is dazed
+            //Uses strength for damage. 20% of speed is added to total damage dealt. Deals extra damage if target is dazed
         }
 
         public void Sprint()
@@ -53,7 +53,7 @@ namespace ConsoleApplication38
         
         public void Stealth()
         {
-            //Defense is increased by 20% of current MP for 4 to 5 turns
+            //Defense is increased by 40% of current MP for 4 to 5 turns
         }
 
     }
