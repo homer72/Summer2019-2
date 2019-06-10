@@ -67,46 +67,96 @@ namespace ConsoleApplication38
             string playerClass = Console.ReadLine();
             //using a placeholder for the player class.  Chiron is going to give them a weapon depending on which class they use.
 
+
             if ( playerClass.ToUpper() == "MAGE")
             {
                 Console.WriteLine("Ah, a magican?  I've trained a few of those in my day.");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
+
                 Console.WriteLine("Take your pick, hero:  1: Wand.  2: Staff.  3: Tome.");
                 int ans = Convert.ToInt32(Console.ReadLine());
-                
-                if (ans == 1)
-                {
-                    string itemTemp = "Wand";
-                    ob.inventory[0] = itemTemp;
-                    Console.WriteLine("Item Added: " + itemTemp);
-                }
-                else if (ans == 2)
-                {
-                    string itemTemp = "Staff";
-                    ob.inventory[0] = itemTemp;
-                    Console.WriteLine("Item Added: " + itemTemp);
-                }
-                else if (ans == 3)
-                {
-                    string itemTemp = "Tome";
-                    ob.inventory[0] = itemTemp;
-                    Console.WriteLine("Item Added: " + itemTemp);
-                }
 
-
-
+                {
+                    if (ans == 1)
+                    {
+                        string itemTemp = "Wand";
+                        ob.inventory[0] = itemTemp;
+                        Console.WriteLine("Item Added: " + itemTemp); 
+                    }
+                    else if (ans == 2)
+                    {
+                        string itemTemp = "Staff";
+                        ob.inventory[0] = itemTemp;
+                        Console.WriteLine("Item Added: " + itemTemp);
+                    }
+                    else if (ans == 3)
+                    {
+                        string itemTemp = "Tome";
+                        ob.inventory[0] = itemTemp;
+                        Console.WriteLine("Item Added: " + itemTemp);
+                    }
+                }
             }
 
-            if (playerClass == "WARRIOR")
+
+            if (playerClass.ToUpper() == "WARRIOR")
             {
-                Console.WriteLine("Item Added:  'Rusty Metal Sword' ");
-                ob.inventory[0] = "Rusty Metal Sword";
+                Console.WriteLine("A Warrior, eh?  You may know a guy I trained back in the day, I think his name was Hercules");
+                Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
+
+                Console.WriteLine("Take your pick, hero:  1: Sword.  2: Axe.  3: Mace.");
+                int ans = Convert.ToInt32(Console.ReadLine());
+
+                {
+                    if (ans == 1)
+                    {
+                        string itemTemp = "Sword";
+                        ob.inventory[0] = itemTemp;
+                        Console.WriteLine("Item Added: " + itemTemp);
+                    }
+                    else if (ans == 2)
+                    {
+                        string itemTemp = "Axe";
+                        ob.inventory[0] = itemTemp;
+                        Console.WriteLine("Item Added: " + itemTemp);
+                    }
+                    else if (ans == 3)
+                    {
+                        string itemTemp = "Mace";
+                        ob.inventory[0] = itemTemp;
+                        Console.WriteLine("Item Added: " + itemTemp);
+                    }
+                }
             }
 
-            if (playerClass == "ROGUE")
+            if (playerClass.ToUpper() == "ROGUE")
             {
-                Console.WriteLine("Item Added:  'Rusty Metal Daggers' ");
-                ob.inventory[0] = "Rusty Metal Daggers";
+                Console.WriteLine("Ah, I haven't trained as many Rogues, but I'm sure I can still teach you a thing or two");
+                Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
+
+                Console.WriteLine("Take your pick, hero:  1: Dagger.  2: Bow.  3: Poisoned Sword.");
+                int ans = Convert.ToInt32(Console.ReadLine());
+
+                {
+                    if (ans == 1)
+                    {
+                        string itemTemp = "Dagger";
+                        ob.inventory[0] = itemTemp;
+                        Console.WriteLine("Item Added: " + itemTemp);
+                    }
+                    else if (ans == 2)
+                    {
+                        string itemTemp = "Bow";
+                        ob.inventory[0] = itemTemp;
+                        Console.WriteLine("Item Added: " + itemTemp);
+                    }
+                    else if (ans == 3)
+                    {
+                        string itemTemp = "Poisoned Sword";
+                        ob.inventory[0] = itemTemp;
+                        Console.WriteLine("Item Added: " + itemTemp);
+                    }
+                }
             }
 
 
