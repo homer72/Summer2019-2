@@ -115,7 +115,32 @@ namespace ConsoleApplication38
 
 
 
+        public void Master(int player_spd, int enemy_spd)
+        {
+            bool battle_over = false;
 
+            //checking to see who's speed is higher
+            if (player_spd > enemy_spd)
+            {
+                //code for player to attack first
+
+
+            }else if(player_spd == enemy_spd)
+            {
+
+                //code for speed being a tie
+
+            }else
+            {
+
+                //code for enemy to go first
+
+
+            }
+
+
+
+        }
 
 
     }
