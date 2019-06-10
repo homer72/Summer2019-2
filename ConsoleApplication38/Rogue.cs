@@ -52,6 +52,9 @@ namespace ConsoleApplication38
                 case 6:
                     Console.WriteLine("Defense is increased by 40% of current MP for 4 to 5 turns");
                     break;
+                default:
+                    Console.WriteLine("That is not one of the Rouge's skills.");
+                    break;
             }
         } 
 
