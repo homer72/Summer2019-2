@@ -196,29 +196,77 @@ namespace ConsoleApplication38
 
 
 
-        public void Master(int player_spd, int enemy_spd)
-        {
-            bool battle_over = false;
+        public void Master(int player_spd, int enemy_spd, int level, object RogueOB)
 
+            /* Potential flaw in this method of monster creation is that a NEW monster is created at every battle.
+             * 
+             *  Possible solution - generate monsters at game beginning and call them during the battle. This allows monster
+             *  stats to be updated during battles and follows the monster through the game. **Downside - Need to pass in player
+             *  stats each battle to determine monster stats effectively making saving the monster stats pointless.
+             *  
+             *  Alternate solution - Leave as is and ganerate new monster each time sinch monster characteristics are based on 
+             *  player stats. Downside - Potentially LOTS of monsters created if a long game. However, no need to store monster
+             *  stats if new ones are generated each time.
+             *  
+             *  Thoughts?
+             */
+        {
+            // ******************************Determines which Monster 
+            Random r = new Random();
+            int rNum = r.Next(1, 6);            
+
+            if (rNum == 1)
+            {
+                Vampire monster = new Vampire(level);
+            }
+            if (rNum == 2)
+            {
+                ShadowKnight monster = new ShadowKnight(level);
+            }
+            if (rNum == 3)
+            {
+                Imp monster = new Imp(level);
+            }
+            if (rNum == 4)
+            {
+                Goblin monster = new Goblin(level);
+            }
+            if (rNum == 5)
+            {
+                DiamondDog monster = new DiamondDog(level);
+            }
+            if (rNum == 6)
+            {
+                BugBear monster = new BugBear(level);
+            }
+            //*********************************************************************
+
+
+
+            bool battle_over = false;
             while (battle_over != true)
             {
                 //checking to see who's speed is higher
                 if (player_spd > enemy_spd)
-                {
-                    //code for player to attack first
-
-
+                { //code for player to attack first
+                    RogueOB.attack(); // need to make all monster attacks named "Attack()"
                 }
+
                 else if (player_spd == enemy_spd)
-                {
-
-                    //code for speed being a tie
-
+                { //code for speed being a tie
+                    Random num = new Random();
+                    int coin = num.Next(1, 2);
+                    if (coin == 1)
+                    {
+                        monster.attack();
+                    }
+                    else
+                        RogueOB.attack();
                 }
-                else
-                {
 
-                    //code for enemy to go first
+                else
+                { //code for enemy to go first
+                    monster.attack();
 
 
                 }
