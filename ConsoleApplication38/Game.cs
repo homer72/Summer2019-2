@@ -41,7 +41,8 @@ namespace ConsoleApplication38
 
         string Intro()
         {
-
+            Console.WriteLine("Press 'Enter' to continue.");
+            Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Welcome Dungeon Diver! Behold a strategic turn based game that explores through a vast dungeon with doors to open and ");
