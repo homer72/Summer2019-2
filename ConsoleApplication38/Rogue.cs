@@ -8,7 +8,7 @@ namespace ConsoleApplication38
 {
     class Rogue : Blank
     {
-        public string job_name = "Rouge";
+        public string job_name = "Rogue";
         public Rogue()
         {
             health = 15 + (level);
@@ -35,7 +35,7 @@ namespace ConsoleApplication38
             switch (skill)
             {
                 case 1:
-                    Console.WriteLine("Default rouge attack. Deals moderate damage.");
+                    Console.WriteLine("Default rogue attack. Deals moderate damage.");
                     break;
                 case 2:
                     Console.WriteLine("Deals low to moderate damage. Deals additional damage based on 20% of user's speed stat.");
@@ -60,7 +60,7 @@ namespace ConsoleApplication38
 
         public int VitalStrike()
         {
-            //Default rouge attack
+            //Default rogue attack
             Random r = new Random();
             int damage = r.Next(Convert.ToInt32((strength * 0.9)), Convert.ToInt32((strength * 1.1)));
             return damage;
