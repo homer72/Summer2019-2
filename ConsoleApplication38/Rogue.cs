@@ -22,6 +22,7 @@ namespace ConsoleApplication38
 
         public void attack()
         {
+            int damage = 0;
             int choice = -1;
             bool end = false;  //variable that determines when turn is over
             while (!end) //loop that starts the turn
@@ -52,27 +53,27 @@ namespace ConsoleApplication38
                 switch (choice)
                 {
                     case 1:
-                        VitalStrike();
+                        damage = VitalStrike();
                         end = true;
                         break;
                     case 2:
-                        Backstab();
+                        damage = Backstab();
                         end = true;
                         break;
                     case 3:
-                        Sprint();
+                        speed = Sprint();
                         end = true;
                         break;
                     case 4:
-                        Snipe();
+                        damage = Snipe();
                         end = true;
                         break;
                     case 5:
-                        TippedDagger();
+                        damage = TippedDagger();
                         end = true;
                         break;
                     case 6:
-                        Stealth();
+                        defense = Stealth();
                         end = true;
                         break;
                     case 7:  //Brings the user to look at what each skill does
