@@ -41,7 +41,7 @@ namespace ConsoleApplication38
 
         string Intro()
         {
-            Console.WriteLine("Press 'Enter' to continue.");
+            Console.WriteLine("Press 'Enter' too continue.");
             Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine();
