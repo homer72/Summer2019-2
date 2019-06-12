@@ -75,7 +75,7 @@ namespace ConsoleApplication38
                         Stealth();
                         end = true;
                         break;
-                    case 7:
+                    case 7:  //Brings the user to look at what each skill does
                         SkillInfo();
                         break;
                     default:
