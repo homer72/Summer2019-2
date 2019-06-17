@@ -9,7 +9,7 @@ namespace ConsoleApplication38
     class Rogue : Blank
     {
         public string job_name = "Rogue";
-        public Rogue()
+        public Rogue(string name)
         {
             health = 15 + (level);
             strength = 5 + (level);
@@ -103,7 +103,7 @@ namespace ConsoleApplication38
         
         public void RogueSkills()
         {
-            Console.WriteLine("1. Vital Strike\n2. Backstab\n3. Sprint\n4. Snipe\n5. Tipped Dagger\n6. Stealth");
+            Console.WriteLine("\n1. Vital Strike\n2. Backstab\n3. Sprint\n4. Snipe\n5. Tipped Dagger\n6. Stealth");
         }
 
         public void SkillInfo()
@@ -165,6 +165,7 @@ namespace ConsoleApplication38
             //Default rogue attack
             Random r = new Random();
             int damage = r.Next(Convert.ToInt32((strength * 0.9)), Convert.ToInt32((strength * 1.1)));
+            Console.WriteLine("{0} used VitalStrike, dealing {1} damage!", name, damage);
             return damage;
         }
 
