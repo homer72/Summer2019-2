@@ -187,21 +187,27 @@ namespace ConsoleApplication38
                 {
                     Console.WriteLine(ob.inventory[i]);
                 }
-                Console.WriteLine("Excellent! You're a quick learner, I can already tell you'll be one of the best Dungeon Divers out there! ");
-                Console.WriteLine("I'll explain two more things and you'll be on your way! Whenever you go through the dungeon you'll get the");
-                Console.WriteLine("choice of picking one of three doors with three different outcomes, a monster, a hidden item, or nothing.");
-                Console.WriteLine("Finally its time I tought you how to fight...");
-
+                
             }
+            else
+            {
+                Console.WriteLine("Ok but remember how to do this later.");
+            }
+            Console.WriteLine("Excellent! You're a quick learner, I can already tell you'll be one of the best Dungeon Divers out there! ");
+            Console.WriteLine("I'll explain two more things and you'll be on your way! Whenever you go through the dungeon you'll get the");
+            Console.WriteLine("choice of picking one of three doors with three different outcomes, a monster, a hidden item, or nothing.");
+            Console.WriteLine("Finally its time I tought you how to fight...");
+            //start fight
+            master(ob);
 
 
-            
+
 
         }
 
 
 
-        public void Master(int player_spd, int enemy_spd, int level, Blank RogueOB)
+        public void master(Blank ob)
 
             /* Potential flaw in this method of monster creation is that a NEW monster is created at every battle.
              * 
@@ -223,27 +229,27 @@ namespace ConsoleApplication38
 
             if (rNum == 1)
             {
-                monster = new Vampire(level);
+                monster = new Vampire(ob.level);
             }
             if (rNum == 2)
             {
-                monster = new ShadowKnight(level);
+                monster = new ShadowKnight(ob.level);
             }
             if (rNum == 3)
             {
-                monster = new Imp(level);
+                monster = new Imp(ob.level);
             }
             if (rNum == 4)
             {
-                monster = new Goblin(level);
+                monster = new Goblin(ob.level);
             }
             if (rNum == 5)
             {
-                monster = new DiamondDog(level);
+                monster = new DiamondDog(ob.level);
             }
             if (rNum == 6)
             {
-                monster = new BugBear(level);
+                monster = new BugBear(ob.level);
             }
             //*********************************************************************
 
@@ -253,12 +259,12 @@ namespace ConsoleApplication38
             while (battle_over != true)
             {
                 //checking to see who's speed is higher
-                if (player_spd > enemy_spd)
+                if (ob.speed > monster.speed)
                 { //code for player to attack first
-                    RogueOB.attack(); // need to make all monster attacks named "Attack()"
+                    monster.health -= ob.attack(); // need to make all monster attacks named "Attack()"
                 }
 
-                else if (player_spd == enemy_spd)
+                else if (ob.speed == monster.speed)
                 { //code for speed being a tie
                     Random num = new Random();
                     int coin = num.Next(1, 2);
@@ -266,8 +272,8 @@ namespace ConsoleApplication38
                     {
                         monster.attack();
                     }
-                    //else
-                        RogueOB.attack();
+                    else
+                        ob.attack();
                 }
 
                 else

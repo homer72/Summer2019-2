@@ -68,5 +68,10 @@ namespace ConsoleApplication38
         }
 
 
+        public void message()
+        {
+            Console.WriteLine("You'll make a nice rug Cat!");
+        }
+
     }
 }
