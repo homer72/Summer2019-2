@@ -53,7 +53,7 @@ namespace ConsoleApplication38
             Console.Beep(1500, 500);
             Random r = new Random();
             int damage = (strength + r.Next(1, 5));
-            Console.WriteLine("Blaa! You take " + damage+"!");
+            Console.WriteLine("Blaa! You take " + damage+" damage!");
             return damage;
 
         }
