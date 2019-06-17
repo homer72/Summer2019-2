@@ -261,7 +261,7 @@ namespace ConsoleApplication38
                     {
                         monster.attack();
                     }
-                    else
+                    //else
                         RogueOB.attack();
                 }
 

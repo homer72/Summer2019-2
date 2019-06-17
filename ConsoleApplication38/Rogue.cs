@@ -84,7 +84,7 @@ namespace ConsoleApplication38
                         break;
                 }
             }
-            return 0;
+            return damage;
         }
 
         public void updateStats(int damage, int HP, int Str, int Def, int Spe, int MP)
