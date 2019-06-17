@@ -207,7 +207,10 @@ namespace ConsoleApplication38
             return defense;
         }
 
+        public override void message()
+        {
 
+        }
     }
 }
             
