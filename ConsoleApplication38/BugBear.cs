@@ -62,6 +62,12 @@ namespace ConsoleApplication38
             }
 
         }
+        public void message() {
+
+            Console.WriteLine("Me Bugbear! Me half-bear, half-bug, and 100% Awesome!");
+
+
+        }
 
 
     }
