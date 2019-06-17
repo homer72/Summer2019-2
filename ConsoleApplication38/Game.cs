@@ -256,33 +256,63 @@ namespace ConsoleApplication38
             monster.message();
 
             bool battle_over = false;
+            bool turn = false;
+            //checking to see who's speed is higher
+            if (ob.speed > monster.speed)
+            { //code for player to attack first
+                monster.health -= ob.attack(); // need to make all monster attacks named "Attack()"
+                turn = false;
+            }
+
+            else
+                if (ob.speed == monster.speed)
+            { //code for speed being a tie
+                Random num = new Random();
+                int coin = num.Next(1, 2);
+                if (coin == 1)
+                {
+                    ob.health -= monster.attack();
+                    turn = false;
+                }
+                else {
+                    monster.health -= ob.attack();
+                    turn = true;
+                }
+                    
+            }
+
+            else
+            { //code for enemy to go first
+                ob.health -= monster.attack();
+                turn = true;
+
+
+            }
             while (battle_over != true)
             {
-                //checking to see who's speed is higher
-                if (ob.speed > monster.speed)
-                { //code for player to attack first
+                if (turn)
+                {
                     monster.health -= ob.attack(); // need to make all monster attacks named "Attack()"
-                }
-
-                else 
-                if (ob.speed == monster.speed)
-                { //code for speed being a tie
-                    Random num = new Random();
-                    int coin = num.Next(1, 2);
-                    if (coin == 1)
+                    turn = false;
+                    if(monster.health <= 0)
                     {
-                        monster.attack();
+                        //end fight
+                        battle_over = true;
+                        Console.WriteLine("You win!");
                     }
-                    else
-                        ob.attack();
                 }
-
                 else
-                { //code for enemy to go first
-                    monster.attack();
-
-
+                {
+                    ob.health -= monster.attack();
+                    turn = true;
+                    if (ob.health <= 0)
+                    {
+                        //end fight
+                        battle_over = true;
+                        Console.WriteLine("You died");
+                    }
                 }
+                
             }
 
 
