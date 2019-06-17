@@ -59,6 +59,12 @@ namespace ConsoleApplication38
             }
 
         }
+        public void message()
+        {
+
+            Console.WriteLine("Meet the ShadowKnight! I am like a shadow, with a HUGE knife!");
+
+        }
 
     }
 }

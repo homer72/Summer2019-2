@@ -8,16 +8,16 @@ namespace ConsoleApplication38
 {
     public abstract class Blank 
     {
-        protected float health;
+        public float health;
         protected int strength;
         protected string name;
         protected Item weapon;
         public Item[] inventory = new Item[10];
         protected int xp;
         public int level;
-        protected int defense;
+        public int defense;
         public int speed;
-        protected int mp;
+        public int mp;
 
 
         public Blank()
