@@ -44,7 +44,7 @@ namespace ConsoleApplication38
             return 0;
         }
 
-        public void message()
+        public override void message()
         {
             Console.WriteLine("Do you feel like dying today?  I think you do!!!!  Wahahahahaha");
         }
