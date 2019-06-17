@@ -18,7 +18,7 @@ namespace ConsoleApplication38
             mp = 5 + Convert.ToInt32((level * 1.3));
             xp = 0;
             level = 0;
-            name = userName;
+            this.name = userName;
         }
 
         public override int attack()
