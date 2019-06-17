@@ -64,7 +64,7 @@ namespace ConsoleApplication38
             }
 
         }
-        public void message()
+        public override void message()
         {
 
             Console.WriteLine("Two!, two bats! aha aha aha aha, I am Count CoCo Fang!");
