@@ -64,7 +64,7 @@ namespace ConsoleApplication38
 
         public override int attack()
         {
-            return 0;
+            return 3;
         }
 
 
