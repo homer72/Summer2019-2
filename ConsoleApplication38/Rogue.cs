@@ -38,7 +38,7 @@ namespace ConsoleApplication38
                     string input = Console.ReadLine();
                     try
                     {
-                        if (Convert.ToInt32(input) >=1 && Convert.ToInt32(input) <= 7)
+                        if (Convert.ToInt32(input) >=1 && Convert.ToInt32(input) <= 8)
                         {
                             choice = Convert.ToInt32(input);
                         }
@@ -102,7 +102,7 @@ namespace ConsoleApplication38
 
         public void ViewStats()
         {
-            Console.WriteLine("Health: {0}\nStrength: {1}\nDefense: {2}\nSpeed: {3}\nMP: {4}\n", health, strength, defense, speed, mp);
+            Console.WriteLine("\nHealth: {0}\nStrength: {1}\nDefense: {2}\nSpeed: {3}\nMP: {4}", health, strength, defense, speed, mp);
         }
         
         public void RogueSkills()
