@@ -60,7 +60,7 @@
   <ItemGroup>
     <Compile Include="Blank.cs" />
     <Compile Include="BugBear.cs" />
-    <Compile Include="Magician.cs" />
+    <Compile Include="Mage.cs" />
     <Compile Include="Goblin.cs" />
     <Compile Include="Rogue.cs" />
     <Compile Include="Warrior.cs" />

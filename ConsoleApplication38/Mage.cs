@@ -87,7 +87,7 @@ namespace ConsoleApplication38
             int damage = 0;
             Random r = new Random();
             Random times = new Random();
-            for(int i = 0; i < times.Next(2, 5); i++)
+            for (int i = 0; i < times.Next(2, 5); i++)
             {
                 damage += r.Next(Convert.ToInt32((strength * 0.3)), Convert.ToInt32((strength * 0.35)));
             }
