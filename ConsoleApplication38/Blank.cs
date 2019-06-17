@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-    public class Blank 
+    public abstract class Blank 
     {
         protected float health;
         protected int strength;
@@ -34,6 +34,6 @@ namespace ConsoleApplication38
             return temp;
 
         }
-
+        public abstract int attack();
     }
 }

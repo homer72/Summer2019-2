@@ -214,31 +214,32 @@ namespace ConsoleApplication38
         {
             // ******************************Determines which Monster 
             Random r = new Random();
-            int rNum = r.Next(1, 6);            
+            int rNum = r.Next(1, 6);
+            Blank monster = null;            
 
             if (rNum == 1)
             {
-                Vampire monster = new Vampire(level);
+                monster = new Vampire(level);
             }
             if (rNum == 2)
             {
-                ShadowKnight monster = new ShadowKnight(level);
+                monster = new ShadowKnight(level);
             }
             if (rNum == 3)
             {
-                Imp monster = new Imp(level);
+                monster = new Imp(level);
             }
             if (rNum == 4)
             {
-                Goblin monster = new Goblin(level);
+                monster = new Goblin(level);
             }
             if (rNum == 5)
             {
-                DiamondDog monster = new DiamondDog(level);
+                monster = new DiamondDog(level);
             }
             if (rNum == 6)
             {
-                BugBear monster = new BugBear(level);
+                monster = new BugBear(level);
             }
             //*********************************************************************
 

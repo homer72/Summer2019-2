@@ -20,7 +20,7 @@ namespace ConsoleApplication38
             level = 0;
         }
 
-        public void attack()
+        public override int attack()
         {
             int damage = 0;
             int choice = -1;
@@ -84,6 +84,7 @@ namespace ConsoleApplication38
                         break;
                 }
             }
+            return 0;
         }
 
         public void updateStats(int damage, int HP, int Str, int Def, int Spe, int MP)
@@ -205,6 +206,7 @@ namespace ConsoleApplication38
             defense += Convert.ToInt32(mp * 0.4);
             return defense;
         }
+
 
     }
 }

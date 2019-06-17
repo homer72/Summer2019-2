@@ -62,6 +62,11 @@ namespace ConsoleApplication38
             mp++;
         }
 
+        public override int attack()
+        {
+            return 0;
+        }
+
 
     }
 }
