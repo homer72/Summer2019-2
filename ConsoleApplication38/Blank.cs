@@ -34,6 +34,7 @@ namespace ConsoleApplication38
             return temp;
 
         }
+        public abstract void message();
         public abstract int attack();
     }
 }
