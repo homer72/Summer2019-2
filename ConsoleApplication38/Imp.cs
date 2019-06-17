@@ -62,6 +62,18 @@ namespace ConsoleApplication38
             mp++;
         }
 
+        public override int attack()
+        {
+            Console.WriteLine("I will absorb your XP and become stronger than ever!");
+            Console.WriteLine("Imp did 3 damage!");
+            return 3;
+        }
+
+
+        public override void message()
+        {
+            Console.WriteLine("You'll make a nice rug Cat!");
+        }
 
     }
 }

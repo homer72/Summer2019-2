@@ -44,7 +44,7 @@ namespace ConsoleApplication38
             return damage;
 
         }
-        public int BasicAttack()                            //basic attack method
+        public override int attack()                            //basic attack method
         {
             Random r = new Random();
             int damage = strength;
@@ -60,6 +60,12 @@ namespace ConsoleApplication38
                 defense -= 1;
                 //missing code to handle turns for duration
             }
+
+        }
+        public override void message() {
+
+            Console.WriteLine("Me Bugbear! Me half-bear, half-bug, and 100% Awesome!");
+
 
         }
 

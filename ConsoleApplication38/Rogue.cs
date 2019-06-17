@@ -20,7 +20,7 @@ namespace ConsoleApplication38
             level = 0;
         }
 
-        public void attack()
+        public override int attack()
         {
             int damage = 0;
             int choice = -1;
@@ -84,6 +84,7 @@ namespace ConsoleApplication38
                         break;
                 }
             }
+            return damage;
         }
 
         public void updateStats(int damage, int HP, int Str, int Def, int Spe, int MP)
@@ -102,7 +103,7 @@ namespace ConsoleApplication38
         
         public void RogueSkills()
         {
-            Console.WriteLine("1. Vital Strike\n2. Backstab\n3. Sprint\n4. Snipe\n5. Tipped Dagger\n6. Stealth\n");
+            Console.WriteLine("1. Vital Strike\n2. Backstab\n3. Sprint\n4. Snipe\n5. Tipped Dagger\n6. Stealth");
         }
 
         public void SkillInfo()
@@ -206,6 +207,10 @@ namespace ConsoleApplication38
             return defense;
         }
 
+        public override void message()
+        {
+
+        }
     }
 }
             

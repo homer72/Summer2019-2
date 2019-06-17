@@ -47,10 +47,13 @@ namespace ConsoleApplication38
             return damage;
 
         }
-        public int BasicAttack()                            //basic attack method
+        public override int attack()                            //basic attack method
         {
+            Console.WriteLine("The Wu-Fang-Clan ain't nothing to mess with!");
+            Console.Beep(1500, 500);
             Random r = new Random();
-            int damage = strength;
+            int damage = (strength + r.Next(1, 5));
+            Console.WriteLine("Blaa! You take " + damage+"!");
             return damage;
 
         }
@@ -64,7 +67,17 @@ namespace ConsoleApplication38
             }
 
         }
+        public override void message()
+        {
 
+            Console.WriteLine("Two!, two bats! aha aha aha aha, I am Count CoCo Fang!");
+
+
+
+
+
+
+        }
 
 
     }

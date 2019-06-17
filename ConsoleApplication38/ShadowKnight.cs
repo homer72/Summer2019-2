@@ -42,7 +42,7 @@ namespace ConsoleApplication38
             defense += 1;
 
         }
-        public int BasicAttack()                            //basic attack method
+        public override int attack()                            //basic attack method
         {
             Random r = new Random();
             int damage = strength;
@@ -57,6 +57,12 @@ namespace ConsoleApplication38
                 speed += 2;
                 //missing code to handle turns for duration
             }
+
+        }
+        public override void message()
+        {
+
+            Console.WriteLine("Meet the ShadowKnight! I am like a shadow, with a HUGE knife!");
 
         }
 

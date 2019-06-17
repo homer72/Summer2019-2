@@ -21,9 +21,9 @@ namespace ConsoleApplication38
             level = 0;
 
         }
-       
-        
-        public int attack()//test
+
+
+        public override int attack()//test
         {
             
             int attack = (r.Next((r.Next(Convert.ToInt32(strength *.95f),(Convert.ToInt32(strength * 1.2f))))));

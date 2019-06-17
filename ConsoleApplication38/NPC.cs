@@ -8,10 +8,19 @@ namespace ConsoleApplication38
 {
     class NPC : Blank
     {
-        
 
+        public override int attack()
+        {
+            return 0;
+        }
+
+        public override void message()
+        {
+            
+        }
 
     }
+
 }
 
 

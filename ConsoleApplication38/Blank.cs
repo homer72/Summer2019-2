@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication38
 {
-    public class Blank 
+    public abstract class Blank 
     {
-        protected float health;
+        public float health;
         protected int strength;
         protected string name;
         protected Item weapon;
-        protected Item[] inventory = new Item[10];
+        public Item inventory = new Item();
         protected int xp;
-        protected int level;
-        protected int defense;
-        protected int speed;
-        protected int mp;
+        public int level;
+        public int defense;
+        public int speed;
+        public int mp;
 
 
         public Blank()
@@ -26,7 +26,6 @@ namespace ConsoleApplication38
             xp = 0;
             name = "Default";
 
-
         }
         public Item DropEquipment()
         {
@@ -34,5 +33,7 @@ namespace ConsoleApplication38
             return temp;
 
         }
+        public abstract void message();
+        public abstract int attack();
     }
 }

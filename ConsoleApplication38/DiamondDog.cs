@@ -44,7 +44,15 @@ namespace ConsoleApplication38
             {
                 defense += 2;
             }
+        public override int attack()
+        {
+            return 4;
+        }
 
+        public override void message()
+        {
+            Console.WriteLine("A wild Diamond Dog appeared!");
         }
     }
+}
 

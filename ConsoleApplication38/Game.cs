@@ -61,12 +61,11 @@ namespace ConsoleApplication38
 
         void TrainingLevel(string userName) //Introductory Level
         {
-            Rogue rog = new Rogue();
-            Item ob = new Item();
-
-            
+            Blank ob = null;
 
 
+
+            Console.WriteLine();
             Console.WriteLine("Welcome " + userName + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your great adventure.");
             Console.WriteLine("Firstly, every hero needs a weapon.  I will gift you a weapon now to start your adventure.");
             Console.WriteLine("But before that, I must ask, what style of adventurer are you?  Mage?  Rogue?  Or Warrior?");
@@ -76,7 +75,8 @@ namespace ConsoleApplication38
 
             if ( playerClass.ToUpper() == "MAGE")
             {
-                Mage RogueOB = new Mage();
+                ob = new Mage();
+                Console.WriteLine();
                 Console.WriteLine("Ah, a magican?  I've trained a few of those in my day.");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
 
@@ -87,19 +87,22 @@ namespace ConsoleApplication38
                     if (ans == 1)
                     {
                         string itemTemp = "Wand";
-                        ob.inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp); 
                     }
                     else if (ans == 2)
                     {
                         string itemTemp = "Staff";
-                        ob.inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 3)
                     {
                         string itemTemp = "Tome";
-                        ob.inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                 }
@@ -108,7 +111,8 @@ namespace ConsoleApplication38
 
             if (playerClass.ToUpper() == "WARRIOR")
             {
-                Warrior RogueOB = new Warrior();
+                ob = new Warrior();
+                Console.WriteLine();
                 Console.WriteLine("A Warrior, eh?  You may know a guy I trained back in the day, I think his name was Hercules");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
 
@@ -119,19 +123,22 @@ namespace ConsoleApplication38
                     if (ans == 1)
                     {
                         string itemTemp = "Sword";
-                        ob.inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 2)
                     {
                         string itemTemp = "Axe";
-                        ob.inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 3)
                     {
                         string itemTemp = "Mace";
-                        ob.inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                 }
@@ -139,7 +146,8 @@ namespace ConsoleApplication38
 
             if (playerClass.ToUpper() == "ROGUE")
             {
-                Rogue RogueOB = new Rogue();
+                ob = new Rogue();
+                Console.WriteLine();
                 Console.WriteLine("Ah, I haven't trained as many Rogues, but I'm sure I can still teach you a thing or two");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
 
@@ -150,19 +158,22 @@ namespace ConsoleApplication38
                     if (ans == 1)
                     {
                         string itemTemp = "Dagger";
-                        ob.inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 2)
                     {
                         string itemTemp = "Bow";
-                        ob.inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 3)
                     {
                         string itemTemp = "Poisoned Sword";
-                        ob.inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                 }
@@ -186,18 +197,31 @@ namespace ConsoleApplication38
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    Console.WriteLine(ob.inventory[i]);
+                    Console.WriteLine(ob.inventory.inventory[i]);
                 }
+                
             }
+            else
+            {
+                Console.WriteLine("Ok but remember how to do this later.");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Excellent! You're a quick learner, I can already tell you'll be one of the best Dungeon Divers out there! ");
+            Console.WriteLine("I'll explain two more things and you'll be on your way! Whenever you go through the dungeon you'll get the");
+            Console.WriteLine("choice of picking one of three doors with three different outcomes, a monster, a hidden item, or nothing.");
+            Console.WriteLine("Finally its time I tought you how to fight...");
+            Console.WriteLine();
+            //start fight
+            master(ob);
 
 
-            
+
 
         }
 
 
 
-        public void Master(int player_spd, int enemy_spd, int level, object RogueOB)
+        public void master(Blank ob)
 
             /* Potential flaw in this method of monster creation is that a NEW monster is created at every battle.
              * 
@@ -214,63 +238,95 @@ namespace ConsoleApplication38
         {
             // ******************************Determines which Monster 
             Random r = new Random();
-            int rNum = r.Next(1, 6);            
+            int rNum = r.Next(1, 6);
+            Blank monster = null;            
 
             if (rNum == 1)
             {
-                Vampire monster = new Vampire(level);
+                monster = new Vampire(ob.level);
             }
             if (rNum == 2)
             {
-                ShadowKnight monster = new ShadowKnight(level);
+                monster = new ShadowKnight(ob.level);
             }
             if (rNum == 3)
             {
-                Imp monster = new Imp(level);
+                monster = new Imp(ob.level);
             }
             if (rNum == 4)
             {
-                Goblin monster = new Goblin(level);
+                monster = new Goblin(ob.level);
             }
             if (rNum == 5)
             {
-                DiamondDog monster = new DiamondDog(level);
+                monster = new DiamondDog(ob.level);
             }
             if (rNum == 6)
             {
-                BugBear monster = new BugBear(level);
+                monster = new BugBear(ob.level);
             }
             //*********************************************************************
 
-
+            monster.message();
 
             bool battle_over = false;
+            bool turn = false;
+            //checking to see who's speed is higher
+            if (ob.speed > monster.speed)
+            { //code for player to attack first
+                monster.health -= ob.attack(); // need to make all monster attacks named "Attack()"
+                turn = false;
+            }
+
+            else
+                if (ob.speed == monster.speed)
+            { //code for speed being a tie
+                Random num = new Random();
+                int coin = num.Next(1, 2);
+                if (coin == 1)
+                {
+                    ob.health -= monster.attack();
+                    turn = false;
+                }
+                else {
+                    monster.health -= ob.attack();
+                    turn = true;
+                }
+                    
+            }
+
+            else
+            { //code for enemy to go first
+                ob.health -= monster.attack();
+                turn = true;
+
+
+            }
             while (battle_over != true)
             {
-                //checking to see who's speed is higher
-                if (player_spd > enemy_spd)
-                { //code for player to attack first
-                    RogueOB.attack(); // need to make all monster attacks named "Attack()"
-                }
-
-                else if (player_spd == enemy_spd)
-                { //code for speed being a tie
-                    Random num = new Random();
-                    int coin = num.Next(1, 2);
-                    if (coin == 1)
+                if (turn)
+                {
+                    monster.health -= ob.attack(); // need to make all monster attacks named "Attack()"
+                    turn = false;
+                    if(monster.health <= 0)
                     {
-                        monster.attack();
+                        //end fight
+                        battle_over = true;
+                        Console.WriteLine("You win!");
                     }
-                    else
-                        RogueOB.attack();
                 }
-
                 else
-                { //code for enemy to go first
-                    monster.attack();
-
-
+                {
+                    ob.health -= monster.attack();
+                    turn = true;
+                    if (ob.health <= 0)
+                    {
+                        //end fight
+                        battle_over = true;
+                        Console.WriteLine("You died");
+                    }
                 }
+                
             }
 
 
