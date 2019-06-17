@@ -68,7 +68,7 @@ namespace ConsoleApplication38
         }
 
 
-        public void message()
+        public override void message()
         {
             Console.WriteLine("You'll make a nice rug Cat!");
         }
