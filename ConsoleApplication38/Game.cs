@@ -187,10 +187,10 @@ namespace ConsoleApplication38
                 {
                     Console.WriteLine(ob.inventory[i]);
                 }
-                //Console.WriteLine("Excellent! You're a quick learner, I can already tell you'll be one of the best Dungeon Divers out there! ");
-                //Console.WriteLine("I'll explain two more things and you'll be on your way! Whenever you go through the dungeon you'll get the");
-                //Console.WriteLine("choice of picking one of three doors with three different outcomes, a monster, a hidden item, or nothing.");
-                //Console.WriteLine("Finally its time I tought you how to fight...");
+                Console.WriteLine("Excellent! You're a quick learner, I can already tell you'll be one of the best Dungeon Divers out there! ");
+                Console.WriteLine("I'll explain two more things and you'll be on your way! Whenever you go through the dungeon you'll get the");
+                Console.WriteLine("choice of picking one of three doors with three different outcomes, a monster, a hidden item, or nothing.");
+                Console.WriteLine("Finally its time I tought you how to fight...");
 
             }
 
