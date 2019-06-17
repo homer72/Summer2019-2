@@ -40,13 +40,11 @@ namespace ConsoleApplication38
             xp = 3 * level;
         }
 
-            public void Fortify()
-            {
-                defense += 2;
-            }
         public override int attack()
         {
-            return 4;
+            Console.WriteLine("Diamond Dog strikes with its fangs!");
+            Console.WriteLine("Dealt 1 damage!");
+            return 1;
         }
 
         public override void message()

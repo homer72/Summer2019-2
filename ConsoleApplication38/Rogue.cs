@@ -18,6 +18,7 @@ namespace ConsoleApplication38
             mp = 5 + (level);
             xp = 0;
             level = 0;
+            this.name = name;
         }
 
         public override int attack()
