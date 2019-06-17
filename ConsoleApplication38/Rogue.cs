@@ -103,7 +103,7 @@ namespace ConsoleApplication38
         
         public void RogueSkills()
         {
-            Console.WriteLine("1. Vital Strike\n2. Backstab\n3. Sprint\n4. Snipe\n5. Tipped Dagger\n6. Stealth\n");
+            Console.WriteLine("1. Vital Strike\n2. Backstab\n3. Sprint\n4. Snipe\n5. Tipped Dagger\n6. Stealth");
         }
 
         public void SkillInfo()
