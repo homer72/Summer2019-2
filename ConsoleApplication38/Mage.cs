@@ -109,5 +109,10 @@ namespace ConsoleApplication38
             return strength;
         }
 
+        public override void message()
+        {
+
+        }
+
     }
 }

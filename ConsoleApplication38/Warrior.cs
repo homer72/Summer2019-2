@@ -61,7 +61,10 @@ namespace ConsoleApplication38
         // items:
 
 
+        public override void message()
+        {
 
+        }
 
 
 
