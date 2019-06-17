@@ -28,7 +28,9 @@ namespace ConsoleApplication38
         {
             
             int attack = (r.Next((r.Next(Convert.ToInt32(strength *.95f),(Convert.ToInt32(strength * 1.2f))))));
+            Console.WriteLine("warrior did " + attack + " damage");
             return attack;//regular attack
+            
         }
         public int Rage()
         {
