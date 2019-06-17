@@ -16,7 +16,7 @@ namespace ConsoleApplication38
         protected int xp;
         public int level;
         protected int defense;
-        protected int speed;
+        public int speed;
         protected int mp;
 
 
