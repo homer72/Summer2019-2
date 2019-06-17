@@ -9,7 +9,7 @@ namespace ConsoleApplication38
     class Mage : Blank
     {
         public string job_name = "Mage";
-        public Mage()
+        public Mage(string userName)
         {
             health = 15 + (Convert.ToInt32(level * 0.85f));
             strength = 5 + (level);
@@ -18,11 +18,12 @@ namespace ConsoleApplication38
             mp = 5 + Convert.ToInt32((level * 1.3));
             xp = 0;
             level = 0;
+            name = userName;
         }
 
         public override int attack()
         {
-            return 0;
+            return 4;
         }
 
         public void ViewStats()
@@ -107,6 +108,11 @@ namespace ConsoleApplication38
             mp -= 1;
             strength += Convert.ToInt32(strength * 0.1);
             return strength;
+        }
+
+        public override void message()
+        {
+
         }
 
     }

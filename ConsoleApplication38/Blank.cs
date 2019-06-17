@@ -12,7 +12,7 @@ namespace ConsoleApplication38
         protected int strength;
         protected string name;
         protected Item weapon;
-        public Item[] inventory = new Item[10];
+        public Item inventory = new Item();
         protected int xp;
         public int level;
         public int defense;
@@ -25,7 +25,6 @@ namespace ConsoleApplication38
             level = 0;
             xp = 0;
             name = "Default";
-
 
         }
         public Item DropEquipment()

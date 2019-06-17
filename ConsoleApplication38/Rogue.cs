@@ -9,7 +9,7 @@ namespace ConsoleApplication38
     class Rogue : Blank
     {
         public string job_name = "Rogue";
-        public Rogue()
+        public Rogue(string name)
         {
             health = 15 + (level);
             strength = 5 + (level);
@@ -103,7 +103,7 @@ namespace ConsoleApplication38
         
         public void RogueSkills()
         {
-            Console.WriteLine("1. Vital Strike\n2. Backstab\n3. Sprint\n4. Snipe\n5. Tipped Dagger\n6. Stealth\n");
+            Console.WriteLine("\n1. Vital Strike\n2. Backstab\n3. Sprint\n4. Snipe\n5. Tipped Dagger\n6. Stealth");
         }
 
         public void SkillInfo()
@@ -165,6 +165,7 @@ namespace ConsoleApplication38
             //Default rogue attack
             Random r = new Random();
             int damage = r.Next(Convert.ToInt32((strength * 0.9)), Convert.ToInt32((strength * 1.1)));
+            Console.WriteLine("{0} used VitalStrike, dealing {1} damage!", name, damage);
             return damage;
         }
 
@@ -173,6 +174,7 @@ namespace ConsoleApplication38
             //Uses strength for damage. 20% of speed is added to total damage dealt. Deals extra damage if target is dazed
             Random r = new Random();
             int damage = r.Next(Convert.ToInt32((strength * 0.7)), Convert.ToInt32((strength * 1))) + Convert.ToInt32((speed *.2));
+            Console.WriteLine("{0} used Backstab, dealing {1} damage!", name, damage);
             return damage;
         }
 
@@ -188,6 +190,7 @@ namespace ConsoleApplication38
             //Long ranged bow attack that varies in damage and deals extra damage to Imps.
             Random r = new Random();
             int damage = r.Next(Convert.ToInt32((strength * 0.6)), Convert.ToInt32((strength * 1.4)));
+            Console.WriteLine("{0} used Snipe, dealing {1} damage!", name, damage);
             return damage;
         }
 
@@ -196,6 +199,7 @@ namespace ConsoleApplication38
             //Player throws a poison-tipped dagger that deals low damage, poisons 100%, and dazes 10%.
             Random r = new Random();
             int damage = r.Next(Convert.ToInt32((strength * 0.55)), Convert.ToInt32((strength * .8)));
+            Console.WriteLine("{0} used TippedDagger, dealing {1} damage!", name, damage);
             return damage;
         }
         
@@ -207,7 +211,10 @@ namespace ConsoleApplication38
             return defense;
         }
 
+        public override void message()
+        {
 
+        }
     }
 }
             

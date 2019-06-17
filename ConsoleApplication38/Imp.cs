@@ -64,7 +64,9 @@ namespace ConsoleApplication38
 
         public override int attack()
         {
-            return 0;
+            Console.WriteLine("I will absorb your XP and become stronger than ever!");
+            Console.WriteLine("Imp did 3 damage!");
+            return 3;
         }
 
 

@@ -41,7 +41,9 @@ namespace ConsoleApplication38
         }
         public override int attack()
         {
-            return 0;
+            Console.WriteLine("Aha!  Taste these claws sucka!");
+            Console.WriteLine("Goblin did 3 Damage!");
+            return 3;
         }
 
         public override void message()

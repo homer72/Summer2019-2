@@ -10,7 +10,7 @@ namespace ConsoleApplication38
     {
         public string job_name = "Warrior";
         Random r = new Random();
-        public Warrior()
+        public Warrior(string username)
         {
             health = 15 + (Convert.ToInt32(level * 1.15f));
             strength = 10 + (level * 2);
@@ -19,11 +19,12 @@ namespace ConsoleApplication38
             mp = 5 + (Convert.ToInt32(level * 0.85f));
             xp = 0;
             level = 0;
+            name = username;
 
         }
-       
-        
-        public override int attack()
+
+
+        public override int attack()//test
         {
             
             int attack = (r.Next((r.Next(Convert.ToInt32(strength *.95f),(Convert.ToInt32(strength * 1.2f))))));
