@@ -197,7 +197,7 @@ namespace ConsoleApplication38
 
 
 
-        public void Master(int player_spd, int enemy_spd, int level, object RogueOB)
+        public void Master(int player_spd, int enemy_spd, int level, Blank RogueOB)
 
             /* Potential flaw in this method of monster creation is that a NEW monster is created at every battle.
              * 
@@ -261,7 +261,7 @@ namespace ConsoleApplication38
                     {
                         monster.attack();
                     }
-                    else
+                    //else
                         RogueOB.attack();
                 }
 
