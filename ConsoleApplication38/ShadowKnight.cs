@@ -44,8 +44,11 @@ namespace ConsoleApplication38
         }
         public override int attack()                            //basic attack method
         {
+            Console.WriteLine("From the shadows I will strike you down!");
+            
             Random r = new Random();
             int damage = strength;
+            Console.WriteLine("ShadowKnight did " + damage + " damage");
             return damage;
 
         }
