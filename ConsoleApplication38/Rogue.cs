@@ -30,7 +30,7 @@ namespace ConsoleApplication38
             {
                 bool choose_phase = false;  //variable that determines the end of the 'pick a skill' phase
                 RogueSkills();
-                Console.Write("7. (Skill info)\n");
+                Console.Write("7. (Skill info)\n8. (Player stats)\n");
 
                 Console.WriteLine("Choose a skill from above: ");
                 while (!choose_phase)  //loop that starts the phase 'pick a skill' phase
@@ -79,6 +79,9 @@ namespace ConsoleApplication38
                         break;
                     case 7:  //Brings the user to look at what each skill does
                         SkillInfo();
+                        break;
+                    case 8:
+                        ViewStats();
                         break;
                     default:
                         Console.WriteLine("Something went wrong when picking a skill. You shouldn't be able to see this message.");
