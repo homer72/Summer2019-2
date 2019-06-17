@@ -63,9 +63,9 @@ namespace ConsoleApplication38
         {
             Blank ob = null;
 
-            
 
 
+            Console.WriteLine();
             Console.WriteLine("Welcome " + userName + " I will be your teacher, Chiron.  My job here is to make sure you are ready to begin your great adventure.");
             Console.WriteLine("Firstly, every hero needs a weapon.  I will gift you a weapon now to start your adventure.");
             Console.WriteLine("But before that, I must ask, what style of adventurer are you?  Mage?  Rogue?  Or Warrior?");
@@ -76,6 +76,7 @@ namespace ConsoleApplication38
             if ( playerClass.ToUpper() == "MAGE")
             {
                 ob = new Mage(userName);
+                Console.WriteLine();
                 Console.WriteLine("Ah, a magican?  I've trained a few of those in my day.");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
 
@@ -87,18 +88,21 @@ namespace ConsoleApplication38
                     {
                         string itemTemp = "Wand";
                         ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp); 
                     }
                     else if (ans == 2)
                     {
                         string itemTemp = "Staff";
                         ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 3)
                     {
                         string itemTemp = "Tome";
                         ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                 }
@@ -108,6 +112,7 @@ namespace ConsoleApplication38
             if (playerClass.ToUpper() == "WARRIOR")
             {
                 ob = new Warrior(userName);
+                Console.WriteLine();
                 Console.WriteLine("A Warrior, eh?  You may know a guy I trained back in the day, I think his name was Hercules");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
 
@@ -119,18 +124,21 @@ namespace ConsoleApplication38
                     {
                         string itemTemp = "Sword";
                         ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 2)
                     {
                         string itemTemp = "Axe";
                         ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 3)
                     {
                         string itemTemp = "Mace";
                         ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                 }
@@ -139,6 +147,7 @@ namespace ConsoleApplication38
             if (playerClass.ToUpper() == "ROGUE")
             {
                 ob = new Rogue(userName);
+                Console.WriteLine();
                 Console.WriteLine("Ah, I haven't trained as many Rogues, but I'm sure I can still teach you a thing or two");
                 Console.WriteLine("I think I have some weapons for you to choose lying around somewhere... ");
 
@@ -150,18 +159,21 @@ namespace ConsoleApplication38
                     {
                         string itemTemp = "Dagger";
                         ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 2)
                     {
                         string itemTemp = "Bow";
                         ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 3)
                     {
                         string itemTemp = "Poisoned Sword";
                         ob.inventory.inventory[0] = itemTemp;
+                        Console.WriteLine();
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                 }
@@ -193,10 +205,12 @@ namespace ConsoleApplication38
             {
                 Console.WriteLine("Ok but remember how to do this later.");
             }
+            Console.WriteLine();
             Console.WriteLine("Excellent! You're a quick learner, I can already tell you'll be one of the best Dungeon Divers out there! ");
             Console.WriteLine("I'll explain two more things and you'll be on your way! Whenever you go through the dungeon you'll get the");
             Console.WriteLine("choice of picking one of three doors with three different outcomes, a monster, a hidden item, or nothing.");
             Console.WriteLine("Finally its time I tought you how to fight...");
+            Console.WriteLine();
             //start fight
             master(ob);
 
