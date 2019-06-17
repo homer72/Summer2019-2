@@ -86,19 +86,19 @@ namespace ConsoleApplication38
                     if (ans == 1)
                     {
                         string itemTemp = "Wand";
-                        ob.inventory[0].inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
                         Console.WriteLine("Item Added: " + itemTemp); 
                     }
                     else if (ans == 2)
                     {
                         string itemTemp = "Staff";
-                        ob.inventory[0].inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 3)
                     {
                         string itemTemp = "Tome";
-                        ob.inventory[0].inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                 }
@@ -118,19 +118,19 @@ namespace ConsoleApplication38
                     if (ans == 1)
                     {
                         string itemTemp = "Sword";
-                        ob.inventory[0].inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 2)
                     {
                         string itemTemp = "Axe";
-                        ob.inventory[0].inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 3)
                     {
                         string itemTemp = "Mace";
-                        ob.inventory[0].inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                 }
@@ -149,19 +149,19 @@ namespace ConsoleApplication38
                     if (ans == 1)
                     {
                         string itemTemp = "Dagger";
-                        ob.inventory[0].inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 2)
                     {
                         string itemTemp = "Bow";
-                        ob.inventory[0].inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                     else if (ans == 3)
                     {
                         string itemTemp = "Poisoned Sword";
-                        ob.inventory[0].inventory[0] = itemTemp;
+                        ob.inventory.inventory[0] = itemTemp;
                         Console.WriteLine("Item Added: " + itemTemp);
                     }
                 }
@@ -185,7 +185,7 @@ namespace ConsoleApplication38
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    Console.WriteLine(ob.inventory[i]);
+                    Console.WriteLine(ob.inventory.inventory[i]);
                 }
                 
             }
