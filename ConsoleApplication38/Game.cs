@@ -253,7 +253,7 @@ namespace ConsoleApplication38
             }
             //*********************************************************************
 
-
+            monster.message();
 
             bool battle_over = false;
             while (battle_over != true)
@@ -264,7 +264,8 @@ namespace ConsoleApplication38
                     monster.health -= ob.attack(); // need to make all monster attacks named "Attack()"
                 }
 
-                else if (ob.speed == monster.speed)
+                else 
+                if (ob.speed == monster.speed)
                 { //code for speed being a tie
                     Random num = new Random();
                     int coin = num.Next(1, 2);
