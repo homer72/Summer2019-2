@@ -44,6 +44,10 @@ namespace ConsoleApplication38
             {
                 defense += 2;
             }
+        public override int attack()
+        {
+            return 0;
+        }
 
         }
     }

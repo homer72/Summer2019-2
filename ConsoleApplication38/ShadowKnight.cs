@@ -42,7 +42,7 @@ namespace ConsoleApplication38
             defense += 1;
 
         }
-        public int BasicAttack()                            //basic attack method
+        public override int attack()                            //basic attack method
         {
             Random r = new Random();
             int damage = strength;

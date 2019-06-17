@@ -20,9 +20,9 @@ namespace ConsoleApplication38
             level = 0;
         }
 
-        public void attack()
+        public override int attack()
         {
-
+            return 0;
         }
 
         public void ViewStats()
@@ -108,5 +108,6 @@ namespace ConsoleApplication38
             strength += Convert.ToInt32(strength * 0.1);
             return strength;
         }
+
     }
 }

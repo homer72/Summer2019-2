@@ -39,5 +39,9 @@ namespace ConsoleApplication38
             health = (r.Next(50, 100) * .1f) + level;
             xp = 2 * level;
         }
+        public override int attack()
+        {
+            return 0;
+        }
     }
 }
