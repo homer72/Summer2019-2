@@ -14,7 +14,7 @@ namespace ConsoleApplication38
         protected Item weapon;
         public Item[] inventory = new Item[10];
         protected int xp;
-        protected int level;
+        public int level;
         protected int defense;
         protected int speed;
         protected int mp;
